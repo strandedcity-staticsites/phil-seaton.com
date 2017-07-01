@@ -1,0 +1,327 @@
+/*
+Theme Name: Phil Seaton Portfolio
+Theme URI: http://phil-seaton.com/wp-content/themes/philseaton
+Description: Phil Seaton's Customized Portfolio theme
+Author: Phil Seaton
+Author URI: http://phil-seaton.com/
+Version: 0.9
+Tags: portfolio, graphic design, architecture
+License: All Rights Reserved. No use permitted without written permission.
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+
+
+* {
+	margin:0;
+	padding:0;
+	border:none;
+	outline:none;
+}
+
+/*Layout styles*/
+body{ background:#fff ;overflow:hidden; }
+a{ color:#999;text-decoration: none; }
+p{ margin-top:12px; }
+
+#whole_container{ position:absolute;width:200%;height:100%; }
+#loadingGif { position: absolute; top:50%; left:50%; color:#333333; }
+#load_post{ position: absolute; top:0px; left: 50%; height:100%; width: 50%; background:#FFF;}
+#content{  position:absolute;top:0px;left:0px;width:100%;overflow-x: hidden; }
+.entry-content{
+	top:0;
+	left:0;
+	position:absolute;
+	width: 100%;
+	height: 100%;
+}
+
+.index_container {
+	position:absolute;
+	top:100px;
+	height: 100%;
+	width: 100%;
+	overflow:hidden;
+}
+
+		
+.details{ margin:15px 20px; }	
+
+/* Styling for the "categories" and "about phil" menus at the bottom of the screen */
+#pagelink-container{
+	position:absolute;
+	left:0;
+	overflow:hidden;
+	background-color:#FFF;
+	z-index:3;
+	vertical-align:bottom;
+	height:16px;
+	width:100%;
+}
+.sidebar-row {
+	position:absolute;
+	width: 2000px;
+	height: 16px;
+	background-color: #CCC;
+	font-size: 10px;
+	left: 0px;
+	z-index:10;
+}
+.sidebar-row-overlay {
+	position:absolute;
+	width: 2000px;
+	height: 12px;
+	background-color: #FFF;
+	top: 2px;
+	left: 0px;
+}
+#row1{
+	vertical-align : top;
+	top : 0;
+}
+#row2{
+	bottom : 36px;
+}
+#pagelink-container{
+	bottom : 58px;
+}
+
+.menuitem_container2 {
+	position:absolute;
+	top:0;
+	left:0;
+	height:12px;
+	width:150px;
+	background-color: #FFF;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	text-transform: uppercase;
+	text-align: left;
+	text-indent: 25px;
+	word-spacing: 2pt;
+	top: 2px;
+	margin-right:25px;
+	color: #000;
+}
+.menuitem_text{
+	float:left;
+	position:absolute;	
+	height:12px;
+	width:150px;
+	top:0;
+	left:0;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	text-transform: uppercase;
+	text-align: left;
+	text-indent: 25px;
+	margin-right:0px;
+	color: #000;
+	overflow: hidden;
+	/*	margin-bottom:8px;*/
+}
+.menuitem_bg {
+	float:left;
+	position:relative;
+	height:16px;
+	background-color: #CCC;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	text-transform: uppercase;
+	text-align: left;
+	text-indent: 25px;
+	word-spacing: 2pt;
+	padding-right:30px;
+	margin-right:0px;	
+/*	margin-bottom:8px;*/
+}
+.rollover{
+	position:absolute;
+	width:100%;
+	height:12px;
+	top:0;
+	left:0;
+	background-color:#FFFF51;
+}
+.rollover_magenta{
+	position:absolute;
+	width:100%;
+	height:12px;
+	top:0;
+	left:0;	
+	background-color:#EC5CA1;	
+}
+/* End styling for categories and about phil menus */
+
+.permpage{;}
+
+
+/* Styling for left and right buttons on simplesli.de & other slideshow items*/
+.left-button {
+	text-align: left;
+	left:0px;
+	border-radius: 0px 10px 10px 0px;
+	moz-border-radius: 0px 10px 10px 0px;
+}
+.right-button {
+	text-align: right;
+	right:0px;
+	border-radius: 10px 0px 0px 10px;
+	moz-border-radius: 10px 0px 0px 10px;
+}
+.slide-button {
+	position: absolute;
+	top:50%;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	font-size: 20px;
+	font-variant: small-caps;
+	line-height: normal;
+	cursor:pointer;
+	color: #222;
+	background-color: #EEE;
+	margin: auto;
+	padding: 50px 4px 56px 4px;
+	opacity:0.6;
+	filter:alpha(opacity=60); /* For IE8 and earlier */
+}
+.captiontext {
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	font-size: 11px;
+	color:#666;
+	overflow:auto;
+	word-spacing: 2px;
+	position:absolute;
+	top:20px;
+	left:20px;
+	width:150px;
+	background-color:#F9F9F9;
+	padding: 10px;
+	opacity:0.90;
+	filter:alpha(opacity=90); /* For IE8 and earlier */
+}
+.captiontext h1 {
+	display:inline;
+	text-transform: uppercase;
+	font-size: 11px;
+	font-weight:800;
+	color:#222;
+}
+/* End Simplesli.de styling */
+
+
+
+/* Styling for the boxes that appear on the main page. Includes only 
+styling for a single project -- the containers for the big post images,
+the descriptive text, and the button that advances into the project's content */
+.crossbar_titlebar {
+	position:absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 12px;
+	background-color:#CCC;
+	cursor:pointer;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	text-transform: uppercase;
+	font-size: 10px;
+	color:#FFF;
+	text-indent:25px;
+	line-height:14px;
+}
+.crossbar_container {
+	z-index: 2 !important;
+	position:absolute;
+	top:20px;
+	left:0px;
+	width:100%;
+	background-color:#FFF;	
+}
+.mainImage {
+	position:absolute;
+	top:8px;
+	left:8px;
+	width:500px;
+	height:250px;
+	overflow:hidden;
+}
+.index_wholeContainer {
+	position:absolute;
+	top:12px;
+	left:0px;
+	width: 500px;
+	height: 500px;
+}
+.index_leftContainer {
+	position:absolute;
+	top:0px;
+	left:0px;
+	height:100%;
+	width:50%;
+}
+.index_rightContainer {
+	position:absolute;
+	top: 0%;
+	left: 50%;
+	width: 50%;
+	height:100%;
+	overflow:hidden;
+}
+.index_textbox {
+	z-index: 2 !important;
+	position:absolute;
+	vertical-align:top;
+	top:8px;
+	left:0px;
+	width:300px;
+	background-color: #FFF; /* change to show a bg color for text*/
+	overflow:auto;
+}
+.index_text {
+	margin-left: 8px; /* change to show a bg color for text*/
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	font-size: 11px;
+	color:#555;
+	overflow:hidden;
+	word-spacing: 2px;
+}
+.index_text h1 {
+	text-transform: uppercase;
+	font-size: 15px;
+	font-weight:800;
+}
+.index_text h2 {
+	display:inline;
+	font-size: 11px;
+	font-weight:800;
+	color:#222;
+}
+.index_text h2 a{
+	display:inline;
+	font-size: 11px;
+	font-weight:800;
+	color:#222;
+}
+.index_project_anchor {
+	top: 8px;
+	position:absolute;
+	background-color: #FFF;
+	margin: auto;
+}
+.index_project_anchor_text {
+	margin-top: 88px;
+	margin-left: 8px;
+	font-size: 30px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	color: #999;
+	text-decoration: none;
+}
+/* End main project display styling*/
+
+.attachment-post-thumbnail{;}
+.wp-post-image{;}
+.active {;}
