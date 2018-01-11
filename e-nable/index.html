@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
 
-<title>Phil Seaton &#8211; Phil Seaton</title>
+<title>e-nable &#8211; Phil Seaton</title>
 <link rel='dns-prefetch' href='//s.w.org' />
 <link rel="alternate" type="application/rss+xml" title="Phil Seaton &raquo; Feed" href="/feed/" />
 <link rel="alternate" type="application/rss+xml" title="Phil Seaton &raquo; Comments Feed" href="/comments/feed/" />
@@ -34,12 +34,13 @@ img.emoji {
 <link rel='https://api.w.org/' href='/wp-json/' />
 <link rel="EditURI" type="application/rsd+xml" title="RSD" href="/xmlrpc.php?rsd" />
 <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="/wp-includes/wlwmanifest.xml" /> 
-<link rel='prev' title='Orchestra Data Science' href='/orchestra-visual-flow-programming-for-python/' />
+<link rel='prev' title='3D Printed Block Print Generator' href='/3d-printed-block-print-generator/' />
+<link rel='next' title='Orchestra3D' href='/orchestra3d/' />
 <meta name="generator" content="WordPress 4.9.1" />
-<link rel="canonical" href="/about-phil/" />
-<link rel='shortlink' href='/?p=1' />
-<link rel="alternate" type="application/json+oembed" href="/wp-json/oembed/1.0/embed?url=%2Fabout-phil%2F" />
-<link rel="alternate" type="text/xml+oembed" href="/wp-json/oembed/1.0/embed?url=%2Fabout-phil%2F&#038;format=xml" />
+<link rel="canonical" href="/e-nable/" />
+<link rel='shortlink' href='/?p=91' />
+<link rel="alternate" type="application/json+oembed" href="/wp-json/oembed/1.0/embed?url=%2Fe-nable%2F" />
+<link rel="alternate" type="text/xml+oembed" href="/wp-json/oembed/1.0/embed?url=%2Fe-nable%2F&#038;format=xml" />
 	<style id="independent-publisher-2-custom-header-css" type="text/css">
 			.site-title,
 		.site-description,
@@ -80,7 +81,7 @@ img.emoji {
 .site-hero-section {/* Until a self-photo becomes available */display: none!important;}		</style>
 	</head>
 
-<body class="post-template-default single single-post postid-1 single-format-standard">
+<body class="post-template-default single single-post postid-91 single-format-standard">
 
 <div id="page" class="hfeed site">
 	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
@@ -113,9 +114,9 @@ img.emoji {
 
 		
 			
-<article id="post-1" class="post-1 post type-post status-publish format-standard hentry category-uncategorized">
+<article id="post-91" class="post-91 post type-post status-publish format-standard hentry category-uncategorized">
 			<header class="entry-header">
-			<h1 class="entry-title">Phil Seaton</h1>		</header><!-- .entry-header -->		<div class="entry-meta">
+			<h1 class="entry-title">e-nable</h1>		</header><!-- .entry-header -->		<div class="entry-meta">
 			<span class="byline">
 				<a href="/author/pseaton/" title="Posts by pseaton" rel="author">pseaton</a>			</span>
 							<span class="cat-links">
@@ -123,14 +124,27 @@ img.emoji {
 			
 			
 			<span class="published-on">
-				<time class="entry-date published" datetime="2018-01-10T07:05:48+00:00">January 10, 2018</time><time class="updated" datetime="2018-01-11T07:21:35+00:00">January 11, 2018</time>			</span>
+				<time class="entry-date published" datetime="2018-01-08T09:05:57+00:00">January 8, 2018</time><time class="updated" datetime="2018-01-11T09:14:51+00:00">January 11, 2018</time>			</span>
 
 					</div><!-- .entry-meta -->
 	
 	<div class="entry-content">
-		<p>I&#8217;m an MIT-trained engineering leader in the SF Bay Area. By day, I build, manage, and scale high-velocity software development teams. By night, I keep my technical skills honed by programming a range of side projects. Some of my projects and experiments follow.</p>
-<p>You&#8217;ll see some themes: Visual Flow Programming, 3D Geometry / CAD, Web Browsers doing things servers normally do, and connections to my computational design master&#8217;s work. Most are demo-able in some way. If something catches your eye, please reach out.</p>
-<p>A current CV can be found <a href="http://monitoring.strandedcity.com/wp-content/uploads/2018/01/Phil-Seaton-Resume-2017-Sept.pdf">here</a>.</p>
+		<p>Through associations while working at Pier 9 / Instructables, I became involved with a non-profit called the E-nable Community Foundation which provides low-cost 3D-Printed Prosthetics to those with limb differences. I was involved with the non-profit only for about a year until my son was born. During that time I provided the base proof-of-concept for their now-product, Limbforge, which enables browser-based configuration of the Printable Prosthetics.</p>
+<p><img class="alignnone size-large wp-image-107" src="/wp-content/uploads/Limbforge-1024x711.png" alt="" width="1024" height="711" srcset="/wp-content/uploads/Limbforge-1024x711.png 1024w, /wp-content/uploads/Limbforge-300x208.png 300w, /wp-content/uploads/Limbforge-768x533.png 768w, /wp-content/uploads/Limbforge-1100x764.png 1100w, /wp-content/uploads/Limbforge.png 1352w" sizes="(max-width: 1024px) 100vw, 1024px" /></p>
+<p>Though I really only did a few night&#8217;s work for Limbforge, the technical architecture is what they still use today. Prior work had attempted to parameterize every model in code using OpenSCAD on the backend, but it created serious problems for the project:</p>
+<ol>
+<li>Prosthetics CAD Designers were unfamiliar with programming, so could not express their designs in code. Programmers were then required for even the smallest change to the models, which were complex.</li>
+<li>Generating each model on the fly was slow</li>
+<li>Visual feedback needed to be rendered before results could even be evaluated by the user</li>
+</ol>
+<p>The new approach generated hundreds of &#8220;pre-baked&#8221; sets of parameters by scripting for Fusion 360, the CAD program in which models were originally parameterized. My work essentially became a 3d model viewer that allowed selection of parameters that would &#8220;choose&#8221; a file that already existed, and show it immediately.</p>
+<div class="projectSummarySection">
+<p><span class="titleText">Dates:</span> <span class="summaryText">2015</span></p>
+<p><span class="titleText">Explorations:</span> <span class="summaryText">Changing technical approach from a prior iteration of the project. Zipping combinations of files and triggering the download entirely on the frontend.</span></p>
+<p><span class="titleText">Technologies:</span> <span class="summaryText">JavaScript (ThreeJS), Fusion 360 Scripting</span></p>
+<p><span class="titleText">Github:</span> <span class="summaryText"><a href="https://github.com/strandedcity/e-nableRnD/tree/master/Limbforge">https://github.com/strandedcity/e-nableRnD/tree/master/Limbforge</a></span></p>
+<p><span class="titleText">Demo:</span> <span class="summaryText"><a href="https://strandedcity.github.io/e-nableRnD/Limbforge/">Proof of Concept</a> (this is buggy and incomplete, but working if you click-drag to rotate the model after selection)</span></p>
+</div>
 	</div><!-- .entry-content -->
 
 	<div class="entry-footer">
@@ -153,14 +167,14 @@ img.emoji {
 </div><!-- .entry-auhtor -->
 		<div class="site-posted-on">
 			<strong>Published</strong>
-			<time class="entry-date published" datetime="2018-01-10T07:05:48+00:00">January 10, 2018</time><time class="updated" datetime="2018-01-11T07:21:35+00:00">January 11, 2018</time>		</div><!-- .site-posted-on -->
+			<time class="entry-date published" datetime="2018-01-08T09:05:57+00:00">January 8, 2018</time><time class="updated" datetime="2018-01-11T09:14:51+00:00">January 11, 2018</time>		</div><!-- .site-posted-on -->
 	</div>
 </article><!-- #post-## -->
 
 			
 	<nav class="navigation post-navigation" role="navigation">
 		<h2 class="screen-reader-text">Post navigation</h2>
-		<div class="nav-links"><div class="nav-previous"><a href="/orchestra-visual-flow-programming-for-python/" rel="prev"><span class="meta-nav screen-reader-text">Previous Post</span> Orchestra Data Science</a></div></div>
+		<div class="nav-links"><div class="nav-previous"><a href="/3d-printed-block-print-generator/" rel="prev"><span class="meta-nav screen-reader-text">Previous Post</span> 3D Printed Block Print Generator</a></div><div class="nav-next"><a href="/orchestra3d/" rel="next"><span class="meta-nav screen-reader-text">Next Post</span> Orchestra3D</a></div></div>
 	</nav>
 			
 		

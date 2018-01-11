@@ -1,0 +1,1088 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<title>Phil Seaton | Portfolio</title>
+<link rel="stylesheet" type="text/css" href="/wp-content/themes/phil-seaton/style.css" />
+<link type="text/css" href="/wp-content/themes/phil-seaton/css/flexcrollstyles.css" rel="stylesheet" media="all" />
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=yes">
+
+<!--BEGIN WP_HEAD() -->
+<link rel='dns-prefetch' href='//ajax.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.3\/svg\/","svgExt":".svg","source":{"concatemoji":"\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.8"}};
+			!function(a,b,c){function d(a){var b,c,d,e,f=String.fromCharCode;if(!k||!k.fillText)return!1;switch(k.clearRect(0,0,j.width,j.height),k.textBaseline="top",k.font="600 32px Arial",a){case"flag":return k.fillText(f(55356,56826,55356,56819),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,56826,8203,55356,56819),0,0),c=j.toDataURL(),b===c&&(k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447),0,0),c=j.toDataURL(),b!==c);case"emoji4":return k.fillText(f(55358,56794,8205,9794,65039),0,0),d=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55358,56794,8203,9794,65039),0,0),e=j.toDataURL(),d!==e}return!1}function e(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i,j=b.createElement("canvas"),k=j.getContext&&j.getContext("2d");for(i=Array("flag","emoji4"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js?ver=2.2'></script>
+
+<script type="text/javascript" charset="utf-8">
+
+	/**
+	 * Courtesy of Kimili Flash Embed - Version 2.2
+	 * by Michael Bester - http://kimili.com
+	 */
+
+	(function(){
+		try {
+			// Disabling SWFObject's Autohide feature
+			if (typeof swfobject.switchOffAutoHideShow === "function") {
+				swfobject.switchOffAutoHideShow();
+			}
+		} catch(e) {}
+	})();
+</script>
+<link rel='https://api.w.org/' href='/wp-json/' />
+<!--END WP_HEAD() -->
+
+<!-- Links to custom & plugin javascripts and css -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript"></script>
+<script src="/wp-content/themes/phil-seaton/js/jquery.simpleSlide.js" type="text/javascript"></script>
+<script type="text/javascript" src="/wp-content/themes/phil-seaton/js/jquery.address-1.4.min.js"></script>
+<script type="text/javascript" src="/wp-content/themes/phil-seaton/js/flexcroll.js"></script>
+
+<!-- Page prep: Includes Liquid GUI setup, deep linking, simplesli.de, hover & click handling, and category label-highlighting system -->
+<script type="text/javascript"><!--
+
+	// Search engines are allowed to index the post pages directly to allow images into the image search results. But users should not land
+	// directly on the post pages, as they will appear without textual explanation and index page framework. Thus if a post page is loaded
+	// as the top frame, the page will redirect to the index page, and open the appropriate project tab
+	if (top===self) {
+		// page is loaded with no frame
+		var LocationVar = location.href;
+		if ( LocationVar.match(/portfolio\//) ) {
+			var NewLocation = LocationVar.replace(/\/portfolio\//g,'/#/');
+			NewLocation = NewLocation.replace(/\/$/, "");
+			location.assign(NewLocation);
+		}
+	}
+
+	/////////////////////////////////////
+	// PREP VARIABLES FOR LIQUID LAYOUT
+	var projectCount = $(".crossbar_container").length;
+	var sidebarPosition = -70;
+	var topPoint = 0;
+	var containerHeight = $(window).height()-topPoint+sidebarPosition-projectCount*4-16;
+	var windowWidth = $(window).width();
+//	var lastWH = $(window).height(); // used to track the window height for resizing fluidly
+
+
+
+	$(document).ready( function() {	
+		// make everything invisible while liquid layout runs. Making it fully invisible causes problems with layout
+		// of images, so we'll just use a very light version:
+		//$('#fadeblock').css({'display':'block'});
+		$('#fadeblock').fadeTo(1,0.001);
+		
+		// prepare ajax:
+		$.ajaxSetup({cache:false});
+		
+		// tabs expand and contract in response to URL changes. One small function works for internal and external page navigation.
+	    $.address.change(function(event) {
+			// ACTIVATE PROJECT TAB BASED ON URL FIRST! CLOSEPROJECTS WILL IGNORE THE ACTIVATED TAB!
+			closeProjects();
+			if (event.value != '/' && event.value != '/home'){
+				var whichBar = parseInt( getTabByName( event.value.substring(1) ) ) + 1 ; // figure out which tab was clicked
+				expandTab(whichBar);
+				setTitle(event.value);
+			}
+	    });
+		
+		// make the layout right on load:
+		liquid();
+		
+		// CLICKING EVENTS FOR TITLE BARS / TABS
+		$(".crossbar_titlebar").click( function () {	// despite using $address to navigate between tabs, we
+														// still need a special case to handle what happens when a user clicks
+														// on an ALREADY CLICKED tab -- that doesn't result in an address change.
+			var whichBar = parseInt($(this).attr('id').substring(3))+1; // figure out which bar was clicked
+			if ( $("#cont" + whichBar).is(".active") ) {
+				// handle click-events for when the ALREADY active bar is clicked
+				$("#cont" + whichBar).removeClass('active');
+				$('#bar' + (whichBar-1)).addClass('allowHover');
+				
+				// simulate clicking home to close all the projects
+				$('#link'+(whichBar-1)).attr('rel','address:/home');
+			} else {
+				$(".crossbar_container").removeClass('activeProject'); // make sure no other bars are active
+				$(this).addClass('active');	 // activate this one
+			}
+		});
+		
+		function toggleState ( elementID, className ) {
+			if ( $('#'+elementID).is(className) ) 
+				{$('#'+elementID).removeClass(className); }
+			else { $('#'+elementID).addClass(className); }
+		}
+		
+		function setTitle( eventVal ) {
+			var title = $('[rel=address:' + eventVal + ']').attr('title');
+			if (title == 'undefined') {
+				$.address.title( 'Phil Seaton | Portfolio' );
+			} else {
+				$.address.title( title + ' | Phil Seaton' );
+			}
+		}
+		
+		// to enable deep linking and general non-bugginess, we need a function that will
+		// look up the tab number using its URL name
+		function getTabByName( tabName ) {
+			var tabNo = $("#showPost" + tabName).parent().attr("id").substring(4);
+			return tabNo;
+		}
+
+		// "clean up" function moves all the project posts offscreen, collapses the tabs
+		function closeProjects() {
+			
+			$.address.title( 'Phil Seaton | Portfolio' );
+			$(".index_wholeContainer").animate({left:0}, 500, function () {/*Animation complete;clearPost();*/});
+			$(".index_wholeContainer").removeClass('activeProject');
+			$(".crossbar_container").removeClass('active');
+			
+			// return the crossbars to their correct colors and states:
+			$(".crossbar_titlebar").not(".active").css('background-color','#CCC');
+			$('.active').find('.crossbar_titlebar').css('background-color','#AAA'); // won't work until "active" property is set ON PAGE LOAD by $address!!
+			
+			// collapse tabs to show all project labels:
+			$(".crossbar_container").animate({top: 20,}, 400, function() {/* Animation complete.*/
+				// once the titlebars are all closed, hide all the images to save on display speed in webkit browsers:
+				//$(".crossbar_container").not(".active").find(".attachment-post-thumbnail").last().css('display','none');
+			});
+			$(".crossbar_titlebar").animate({height: 12,}, 400, function() {/* Animation complete.*/});			
+			
+			// reset all tab links to match their "rel" attributes (if they are changed by a user clicking an active tab)
+			$(".tablink").each(function(index) {
+				var linkTo = $(this).attr('alt');
+				$(this).attr('rel',linkTo);
+			});
+		}
+		
+		// "open" function expands the tab for a named project. Assumes that all necessary closing procedures have been done.
+		function expandTab( tabNo ) {
+			// make sure that the display image for the given title bar is showing. By default, they're hidden to
+			// prevent jerky animations in webkit browsers:
+			$('#cont' + (tabNo-1) ).find('.attachment-post-thumbnail').first().show();
+			$('#cont' + (tabNo-1) ).find('.attachment-post-thumbnail').first().addClass('unHidden');
+			
+			// shrink all tabs except the clicked one:
+			$(".crossbar_titlebar").not("#bar" + (tabNo-1)).animate({height: 2,}, 400, function() {/* Animation complete.*/});
+			$(".crossbar_container").not("#cont" + tabNo+",#cont0").animate({top: 4,}, 400, function() {/* Animation complete.*/});
+			
+			// open the clicked container, make sure the project title is showing
+			$('#cont' + tabNo).animate({top: containerHeight,}, 400, function() { /* Animation complete.*/ });
+			$('#bar' + (tabNo-1)).animate({height: 12,}, 400, function() {/* Animation complete.*/});
+			$('.crossbar_titlebar').not('#bar' + (tabNo-1)).addClass('allowHover'); // reinstate hover for all non-active tabs
+			$('#bar' + (tabNo-1)).removeClass('allowHover'); // disallow hover for any active tab
+			$("#cont" + (tabNo)).addClass('active');
+		}
+				
+		function clearPost() { // removes all of the ajax-loaded content from a particular post or page. Replaces it with the loading graphic
+				//$('#load_post').html('<div style="position:absolute;top:40px;left:0;width:2000px;height:12px;background-color:#888;"></div><div style="position:absolute;top:60px;left:0;width:2000px;height:12px;background-color:#333;"></div><div id="loadingGif"><img style="position:absolute; top:-70px;left:-50px;" src="/wp-content/themes/phil-seaton/img/pageload.gif"></div>');
+		}
+		
+		// prepare simpleslide:
+		simpleSlide({
+			'fullscreen': 'true', 
+			'swipe': 'true', 
+			'set_speed': 700, 
+		});
+		
+		function liquid() {
+			///////////////////////////////////////////////////////
+			// BEGIN CODE DEDICATED TO LIQUID DISPLAY LAYOUT
+			projectCount = $(".crossbar_container").length;
+			topPoint = 0;
+			//topPoint = $("#web").parent().offset().top;
+			
+			containerHeight = $(window).height() - topPoint + sidebarPosition - projectCount*4 - 16;
+			windowWidth = $(window).width();
+			
+			$(".index_container").css({
+				'top' : 0,
+				'height' : 1000,
+			});
+			$(".crossbar_container").css({
+				'height' : containerHeight,
+			});
+			$(".mainImage").css({
+				'height' : containerHeight-28,
+				'width' : windowWidth - 300,
+			});
+			
+			// controls the size of the project display containers to make sure they fill their area
+			$(".index_wholeContainer").css({
+				'top' : 12,
+				'left' : 0,
+				'height' : containerHeight-12,
+				'width' : windowWidth*2,
+			});
+			
+			// if there's a project page open, it will have the class "activeProject". we want to guarantee
+			// that those containers are positioned correctly to display the project, and that others are not
+			$(".activeProject").css({
+				'top' : 12,
+				'left' : -windowWidth,
+			});
+			$(".index_rightContainer").not(".activeProject").css({
+				'top' : 0,
+				'left' : windowWidth,
+				'height' : containerHeight-12,
+				'width' : windowWidth,
+			});
+			$(".index_leftContainer").css({
+				'top' : 0,
+				'left' : 0,
+				'height' : containerHeight-12,
+				'width' : windowWidth,
+			});
+			$(".index_textbox").not('.loadPage').css({
+				'height' : containerHeight-28,
+				'width' : 230,
+				'left' : windowWidth - 282,
+			});
+			$('.loadPage').css({
+				'height' : $(window).height() + sidebarPosition - 30,
+			});
+			
+			$(".index_project_anchor").css({
+				'height' : containerHeight-28,
+				'width' : 34,
+				'left' : windowWidth - 42,
+			});
+			$(".index_project_anchor_text").css({
+				'margin-top' : (containerHeight-28)/2-20,
+			});
+			
+			// a hidden container lies on top of everything; this is where the "about" pages will show when expanded
+			if ( $('#pagelink-container').is('.PermPagesOpen') ) { $('#pagelink-container').css({'height': $(window).height() - 8 + sidebarPosition,}); }
+			
+
+// the 'crossbar titlebar' exclusion shouldn't be necesary, but it fixes a temporary bug until
+// a real fix can be found
+$(".active").not('.crossbar_titlebar').css({'top':containerHeight});
+			
+			$(".attachment-post-thumbnail").each(function() {
+				// calculate aspect ratio of image and parent, then set image prop's based on comparison:
+				var $i = $(this); var $c = $i.parent();
+				var i_ar = $i.width() / $i.height();
+				var c_ar = $c.width() / $c.height();
+				if (i_ar > c_ar) { $i.css({'height':'100%','width':'auto'}); }
+				else { $i.css({'width':'100%','height':'auto'});  }
+				// now center the image:
+				$i.css({'margin-left':($c.width()-$i.width())/2,'margin-top':($c.height()-$i.height())/2});
+			});
+			// END LIQUID DISPLAY CODE
+			///////////////////////////////////////////	
+		}
+
+		// set up a timer to institute resize delay on content side for slide show
+		var timer = '';
+		$(window).resize( function() {
+			liquid();
+			clearTimeout(timer);
+			timer = setTimeout('resizer()', 300);
+		});
+		
+		$(window).load( function() {
+			// on first page load, hide all attachment post thumbnails so they don't overburden animations in webkit browsers
+			$(".attachment-post-thumbnail").not('.unHidden').hide();
+			$('.unHidden').removeClass('unHidden');
+			
+			// arrange everything to fit the screen nicely:
+			liquid();
+			
+			// fade in nicely:
+			$('#fadeblock').delay(200).fadeTo(500,1);
+		});
+		
+		window.onorientationchange = function() {
+			resizer();
+		}
+
+
+		// LOAD PROJECT SLIDES WHEN ANCHORS ARE CLICKED
+		// Since I'm using $address when TABS are selected, I can't use it here for loading the actual new stuff not on the page
+		// in its place, I'm just going to capture the click event like usual jquery:
+		$(".loadProjectSlidesAnchor").click(function() {
+			
+			var url = $(this).attr("alt"); // the address is stored in the anchor's "alt" attribute
+			var idLabel = $(this).parent().parent().attr("id");
+			
+			// unload all other projects to clear memory
+			$(".index_rightContainer").not( $("#"+idLabel).find(".index_rightContainer") ).html(" ");
+			
+			// load the requested project
+			$("#"+idLabel).find(".index_rightContainer").load(url + " #entry-content", function () {resizer();});
+			$("#"+idLabel).animate({left:-windowWidth}, 500, function () {/*Animation complete*/;});
+			$("#"+idLabel).addClass('activeProject');			
+		});
+		
+
+		// hover over the project titles. 
+		// Includes the "reverse highlight" feature to show which categories a project falls under
+		$(".crossbar_titlebar").hover( function () {
+				if ( $(this).is('.allowHover') ) {
+					$(this).css('background-color','#AAA'); // change the background color of this project's title bar
+					
+					// The following few lines find the categories that this project falls under
+					// and highlights those in the menu bar at top of screen
+					var classList =$(this).attr('class').split(/\s+/);
+					$.each( classList, function(index, className){
+						if (className != 'crossbar_titlebar' && className != 'allowHover') {
+							//$('#'+className).css({"background":"#51A3E5"}); // change color of appopriate categories
+							$('#'+className).css({"background":"#EC5CA1"}); // change color of appopriate categories
+							//$('#'+className).addClass('category-underlay'); // change color of appopriate categories
+						}
+					});					
+				}
+			},
+			function () {
+				if ( $(this).is('.allowHover') ) {
+					$(this).css('background-color','#CCC');
+					
+					// The following few lines find the categories that this project falls under
+					// and highlights those in the menu bar at top of screen
+					var classList =$(this).attr('class').split(/\s+/);
+					$.each( classList, function(index, className){
+						if (className != 'crossbar_titlebar' && className != 'allowHover') {
+							$('#'+className).css({"background":"#ccc"}); // change color of appopriate categories
+							//$('#'+className).removeClass('category-underlay');
+						}
+					});					
+				}
+		});
+		
+		// hover over anchors for next project
+		$(".index_project_anchor").hover( function () {
+				$(this).css('background-color','#EEE');
+			},
+			function () {
+				$(this).css({'background-color':'#FFF'});
+		});
+
+		
+		// HIGHLIGHT PROJECT TITLE BARS when the corresponding category label is clicked
+		$(".menuitem_container2").click( function (event) { 
+			if ( $(this).is('.pagelink') ) { // do one thing for permanent pages (such as "about")
+				if ( $('#pagelink-container').is('.PermPagesOpen') ) { // toggle "about" page's open position to CLOSED
+					$('#pagelink-container').removeClass('PermPagesOpen');
+					$('#pagelink-container').animate({height:16}, 500, function () {/*Animation complete*/;});					
+				} else { // toggle "about" page's open position to OPEN
+					// open the window				
+					var availSpace = $(window).height() - 8 + sidebarPosition;
+					$('#pagelink-container').addClass('PermPagesOpen');
+					$('#pagelink-container').animate({height:availSpace}, 500, function () {});
+					
+					// load the content from this page, unless it's the "about phil" page which is loaded by default in index.php
+					if ( $(this).parent().attr('alt') != '/about-phil/') {
+						$("#page_text").load($(this).parent().attr('alt') + " #content_text", function () {
+							/*content loaded*/
+							liquid();
+							fleXenv.updateScrollBars();
+						});
+					}
+				}
+			} else { // do another thing for the category highlihts
+				$(".menuitem_container2").css({"background":"#FFF"});// return all category buttons to white
+				$(this).not('#catall').css({"background":"#51A3E5"});// change the CLICKED category button to BLUE
+				$(".menuitem_container2").addClass('allowHover'); // add hover behavior to all category labels
+				$(this).not('#catall').removeClass('allowHover'); // remove hover activity from the CLICKED category label only
+				
+				var categoryClicked = $(this).attr('id').substring(3);
+				$('.crossbar_titlebar').not('.'+categoryClicked).css({"background":"#CCC"}); // return all title bars to regular grey
+				$('.crossbar_titlebar').not('.'+categoryClicked).addClass('allowHover'); // re-enable hover activity for non-selected titlebars
+				
+				$('.'+categoryClicked).css({"background":"#51A3E5"}); // make the background of highlighted projects colored
+				$('.'+categoryClicked).removeClass('allowHover'); // prevent it from changing during hover
+				
+				if ( $(this).is('#catall') ) { // special case for the "clear categories" button -- it needs to expand the project labels, too.
+					closeProjects();
+					$(".menuitem_bg").css({"background":"#ccc"});
+				}
+			}
+			
+		});
+
+		$(".menuitem_container2").hover( function () {
+				if ( $(this).is('.allowHover') ) {$(this).css({"background":"#51A3E5"});};
+		}, function () {
+				if ( $(this).is('.allowHover') ) {$(this).css({"background":"#FFF"});};
+		});
+		
+//		$('#pagelink-container').
+		
+		// handle rollovers for permanent pages (bio, contact, etc)
+		$(".rollover_magenta").css({'opacity':'0'});
+	
+		//////////////////////////
+		// MUST WAIT FOR IMAGES TO LOAD BEFORE QUERYING THEIR SIZE
+		// this function proportionately sizes images to FULLY fill their container
+		$("img").load(function() {
+			// calculate aspect ratio of image and parent, then set image prop's based on comparison:
+			var $i = $(this); var $c = $i.parent();
+			var i_ar = $i.width() / $i.height();
+			var c_ar = $c.width() / $c.height();
+			if (i_ar > c_ar) { $i.css({'height':'100%','width':'auto'}); }
+			else { $i.css({'width':'100%','height':'auto'});  }
+			// now center the image:
+			//$i.css('left',-($c.width()-$i.width())/2);
+		});
+
+
+
+	////////////////////////////////////////
+	// END JQUERY SECTION
+	});
+	
+	/////////////////////////////////
+	// RESIZE FUNCTION -- NOTE THIS IS NOT A JQUERY FUNCTION!
+	function resizer() { // handles the re-layout of the content pages when the user resizes his screen
+		var agent = navigator.userAgent.toLowerCase();
+		var is_iphone = ((agent.indexOf('iphone') != -1));
+		var is_ipad = ((agent.indexOf('ipad') != -1));
+		var is_msie = ((agent.indexOf('msie') != -1));
+//		if(is_iphone || is_ipad || is_msie){
+// 			NOTE THAT THIS FUNCTION IS REQUIRED TO MAKE THE PAGE RESIZE CORRECTLY IN IE WHEN IT IS **NOT** LOADED THROUGH AJAX!			
+// 			location.reload(true); // reload the whole page if it's not in an iframe at all
+//		} else {				
+			simpleSlide({
+				'fullscreen': 'true', 
+				'swipe': 'true', 
+				'set_speed': 700, 
+				'callback': function(){
+					// whenever the window is resized, be sure that the status bar is reset to 0.
+					// a bug in simpleslide prevented the reset, causing the bar to just keep counting
+					// even though the slider position was reset.
+					//$('.simpleSlideStatus-window').css({'marginLeft': 0,'marginTop': 0});
+					//$('.caption-tray').css({'marginLeft': 0,'marginTop': 0});
+				}
+			});
+//		};
+	}
+	
+// --></script>
+
+<!-- BEGIN GOOGLE ANALYTICS CODE -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-29163854-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+<!--END GOOGLE ANALYTICS CODE-->
+
+</head>
+<body>
+
+<div id="fadeblock" style="display:none;position:absolute;width:100%;height:100%;">
+
+<!-- START CATEGORIES & BIO LINK -->
+<div id="pagelink-container">
+
+<!-- BEGIN "PAGES" MENU TO PERMANENT PAGES, SUCH AS BIO AND CONTACTS -->
+<div class="sidebar-row" id="row1">
+<div class="sidebar-row-overlay">&nbsp;</div>
+<div class="menuitem_bg">About Phil<a href="/about-phil/" rel='address:/About-Phil' title="About-Phil" alt="/about-phil/"><div class="menuitem_container2 allowHover pagelink" id="About-Phil"><div class="menuitem_text">About Phil</div></div></a></div> 
+</div> <!--end sidebar-row (row 1) -->
+
+<div id="loadPage" style="position:absolute; top:12px; left:16px; width:100%; height:100%">
+
+<div class="index_textbox loadPage flexcroll" id="ajaxPageText">
+<div class="index_textbox loadPage flexcroll">
+<div class="index_text" id="content_text">
+<h1>Phil Seaton</h1>
+<p>Phil&#8217;s interests and skills as a designer cross a variety of inter-disciplinary bounds. His programming experience across many platforms ranging from server-side web development to parametric design solutions augment other interests in materiality, construction, and engineering. He has taught design skills, design studios, and structures while pursuing his own degree in architecture.</p>
+<p>Phil&#8217;s work as a Master&#8217;s of Architecture at MIT from 2008-2012 focused on the treatment of energy as a social medium. While sustainability has traditionally been the responsibility of technicians pursuing cleaner energy production and more efficient energy use, Phil came to believe strongly in the importance of bringing energy use into personal, cultural, and social space. By treating electricity socially, a critical new avenue of sustainability opens. Click the energy tag below to highlight relevant projects.</p>
+<p>Phil is fluent in a wide range of software packages and programming languages including the entire Adobe Suite, Rhino/Grasshopper, Java, Processing, Perl, and others. He is available for freelance web design &#038; digital fabrication work. Before architecture, Phil worked for Annie Leibovitz, ran a successful <a href='http://www.livingphoto.net/'>photography business</a> of his own, learned Italian, and built fine custom furniture.</p>
+<p><a href='/PhilSeaton_CV.pdf' target='_blank'>Download Current Resume</a></p>
+<p><a href='mailto:phil@phil-seaton.com' target='_blank'>email</a></p>
+</div>
+</div>
+<div class="index_text" id="page_text">
+</div>
+</div>
+
+</div>
+
+</div> <!--end pagelink-container -->
+
+
+<div class="sidebar-row" id="row2"><div class="sidebar-row-overlay">&nbsp;</div>
+
+<!-- BEFORE THE LIST OF CATEGORIES, THERE'S A SPECIAL BUTTON TO SHOW ALL PROJECTS -->
+<div class="menuitem_bg">clear<a href="#"><div class="menuitem_container2 allowHover" id="catall"><div class="menuitem_text">clear</div></div></a></div>
+
+
+
+<!-- BEGIN "CATEGORIES" MENU SO PEOPLE CAN CLICK TO HIGHLIGHT PROJECTS -->
+<div class="menuitem_bg" id="architecture">architecture<a href="#"><div class="menuitem_container2 allowHover" id="catarchitecture"><div class="menuitem_text">architecture</div></div></a></div>
+
+<div class="menuitem_bg" id="energy">energy<a href="#"><div class="menuitem_container2 allowHover" id="catenergy"><div class="menuitem_text">energy</div></div></a></div>
+
+<div class="menuitem_bg" id="fabrication">fabrication<a href="#"><div class="menuitem_container2 allowHover" id="catfabrication"><div class="menuitem_text">fabrication</div></div></a></div>
+
+<div class="menuitem_bg" id="furniture">furniture<a href="#"><div class="menuitem_container2 allowHover" id="catfurniture"><div class="menuitem_text">furniture</div></div></a></div>
+
+<div class="menuitem_bg" id="geometry">geometry<a href="#"><div class="menuitem_container2 allowHover" id="catgeometry"><div class="menuitem_text">geometry</div></div></a></div>
+
+<div class="menuitem_bg" id="interaction">interaction<a href="#"><div class="menuitem_container2 allowHover" id="catinteraction"><div class="menuitem_text">interaction</div></div></a></div>
+
+<div class="menuitem_bg" id="programming">programming<a href="#"><div class="menuitem_container2 allowHover" id="catprogramming"><div class="menuitem_text">programming</div></div></a></div>
+
+<div class="menuitem_bg" id="web">web<a href="#"><div class="menuitem_container2 allowHover" id="catweb"><div class="menuitem_text">web</div></div></a></div>
+
+
+</div>
+<!-- END CATEGORIES -->
+
+
+
+
+
+
+
+
+
+<div id="whole_container">
+
+<div class="index_container" id="container">
+
+
+<!-- BEGINNING OF THE LOOP  -->
+
+<div class="crossbar_container" id="cont0">
+	
+	<a href="/portfolio/brightproofs" rel='address:/brightproofs' title="BrightProofs" id="link0" alt='address:/brightproofs' class="tablink">
+	<div class="crossbar_titlebar allowHover interaction programming web" id="bar0">
+		<div style="margin-top:-1px;">BrightProofs</div>
+	</div>
+	</a>
+	
+	<div class="index_wholeContainer" id="showPostbrightproofs">
+		<div class="index_leftContainer">		
+			<div class="mainImage">
+				<img width="790" height="600" src="/wp-content/uploads/2012/01/brightproofs_1-e1328043780611.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image"  />
+			</div>
+			<div class="index_textbox flexcroll">
+				<div class="index_text"><h1>BrightProofs</h1><br /><br />BrightProofs combines the features of a photographer's dedicated Content Management System with a fully-integrated web-store / shopping cart system. It is a small piece of server-side software, written primarily in Perl, which allows digital photographers with no tech-savvy to set up online galleries for their customers while maintaining full control over branding, access, quality control of prints, and, most of all, profits. 
+
+<br><br>BrightProofs integrates two white-label user interfaces: one for the photographer to set up and manage galleries, and a second for the photographer's clients to view and order photographs online.<h2><a href="http://www.livingphoto.net/weddings/BrightProofs_sample/" target="_blank"> A sample gallery is online here.</a></h2>
+
+<br><br>Unlike other services which may charge monthly or take control of the photographer's work-flow by using their own photo lab to process print orders, BrightProofs gives full control to the photographer with a subscription-free service that enables photos to appear at the photographer's own domain. The project began as a way to solve one of Phil's own problems as a wedding photographer, but quickly attracted the interest of many other photographers who still use the software today.
+
+<br><br>Solely responsible for ideation, execution, and sales, 2007.</div>
+			</div>
+			<a href="#" alt="/portfolio/brightproofs/" rel='address:/brightproofs' class="loadProjectSlidesAnchor">
+				<div class="index_project_anchor">
+					<div class="index_project_anchor_text">»</div>
+				</div>
+			</a>
+		</div>
+		<div class="index_rightContainer">
+			<div id="loadingGif">
+				<img style="position:absolute; top:-70px;left:-50px;" src="/wp-content/themes/phil-seaton/img/pageload.gif">
+			</div>
+		</div>
+	</div>
+<div class="crossbar_container" id="cont1">
+	
+	<a href="/portfolio/lightsolve" rel='address:/lightsolve' title="LightSolve" id="link1" alt='address:/lightsolve' class="tablink">
+	<div class="crossbar_titlebar allowHover interaction programming" id="bar1">
+		<div style="margin-top:-1px;">LightSolve</div>
+	</div>
+	</a>
+	
+	<div class="index_wholeContainer" id="showPostlightsolve">
+		<div class="index_leftContainer">		
+			<div class="mainImage">
+				<img width="900" height="600" src="/wp-content/uploads/2012/01/LS-annualimages_splash.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image"  srcset="/wp-content/uploads/2012/01/LS-annualimages_splash.jpg 900w, /wp-content/uploads/2012/01/LS-annualimages_splash-150x100.jpg 150w, /wp-content/uploads/2012/01/LS-annualimages_splash-250x166.jpg 250w" sizes="(max-width: 900px) 100vw, 900px" />
+			</div>
+			<div class="index_textbox flexcroll">
+				<div class="index_text"><h1>LightSolve</h1><br /><br />A project under the umbrella of the <h2><a href="http://daylighting.mit.edu/research_detail.php?project=LightSolve" target="_blank"> MIT Daylighting Lab</a></h2>, led by Marilyne Anderson, LightSolve is a research project and teaching tool designed to bring daylighting analysis into a much earlier stage of a building project's development. Under most current workflows, daylighting consultants are brought into a project too late to offer substantive suggestions having to do with floor & window heights, building orientation, and shading devices.
+
+<br><br>LightSolve is a plugin for Sketchup which generates a large volume of visual analysis data for the architect; Phil's responsibility was to take these volumes of information, and to create a compatible user interface which would enable the data to be organized meaningfully. The fully-functional desktop software was written from the ground up in ActionScript for Adobe AIR, and allows users to flip through information in numerous ways.
+
+<br><br>Phil was a hired gun for ongoing academic research project; Summer 2009.</div>
+			</div>
+			<a href="#" alt="/portfolio/lightsolve/" rel='address:/lightsolve' class="loadProjectSlidesAnchor">
+				<div class="index_project_anchor">
+					<div class="index_project_anchor_text">»</div>
+				</div>
+			</a>
+		</div>
+		<div class="index_rightContainer">
+			<div id="loadingGif">
+				<img style="position:absolute; top:-70px;left:-50px;" src="/wp-content/themes/phil-seaton/img/pageload.gif">
+			</div>
+		</div>
+	</div>
+<div class="crossbar_container" id="cont2">
+	
+	<a href="/portfolio/soft-louver" rel='address:/soft-louver' title="Soft Louver" id="link2" alt='address:/soft-louver' class="tablink">
+	<div class="crossbar_titlebar allowHover architecture energy fabrication programming" id="bar2">
+		<div style="margin-top:-1px;">Soft Louver</div>
+	</div>
+	</a>
+	
+	<div class="index_wholeContainer" id="showPostsoft-louver">
+		<div class="index_leftContainer">		
+			<div class="mainImage">
+				<img width="900" height="600" src="/wp-content/uploads/2012/01/soft_louver-900x600.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image"  />
+			</div>
+			<div class="index_textbox flexcroll">
+				<div class="index_text"><h1>Soft Louver</h1><br /><br />The agenda of the studio deconstructs the modern wall assembly in an effort to rethink the notion of facade while integrating low-cost, low-performance flexible solar cells known as OPVs, or Organic Photo-Voltaics. At a larger urban scale, the projects seek high-impact uses for the relatively small amounts of power, finding architectural ways to put the vibrant life of the urban market below in direct contact with the new, charged facade.
+
+The SOFT Louver, a tension-based textile louver system, provides opportunities the residential occupants of the tower building in Rio de Janeiro, Brazil, to optimize their electricity generation and sun-shading simultaneously. At a larger, urban scale, public areas of the building's SOFT facade can be controlled centrally, creating iconic imagery that identifies the building's unique energy-gathering potentials. <br><br>
+
+The "Mixing Market", located at the ground level under a tower covered in the SOFT Louver system, employs the small amounts of power in a sun-following manner: the building's facades are linked to speakers located throughout the market, creating a situation where the sound-focus of the shaded space is linked to the path of the sun in the sky throughout the day and year. The various populations who use the market -- from produce farmers to late-night party-goers -- are all provided with electricity from the facade to power speakers which demand attention from the busy Marketplace's patrons.
+
+<br><br>Sheila Kennedy's architecture studio, Unpacking the Wall, with Juliet Hsu, Spring 2010. </div>
+			</div>
+			<a href="#" alt="/portfolio/soft-louver/" rel='address:/soft-louver' class="loadProjectSlidesAnchor">
+				<div class="index_project_anchor">
+					<div class="index_project_anchor_text">»</div>
+				</div>
+			</a>
+		</div>
+		<div class="index_rightContainer">
+			<div id="loadingGif">
+				<img style="position:absolute; top:-70px;left:-50px;" src="/wp-content/themes/phil-seaton/img/pageload.gif">
+			</div>
+		</div>
+	</div>
+<div class="crossbar_container" id="cont3">
+	
+	<a href="/portfolio/sixty-eight-and-sunny" rel='address:/sixty-eight-and-sunny' title="Sixty-Eight and Sunny" id="link3" alt='address:/sixty-eight-and-sunny' class="tablink">
+	<div class="crossbar_titlebar allowHover architecture energy interaction" id="bar3">
+		<div style="margin-top:-1px;">Sixty-Eight and Sunny</div>
+	</div>
+	</a>
+	
+	<div class="index_wholeContainer" id="showPostsixty-eight-and-sunny">
+		<div class="index_leftContainer">		
+			<div class="mainImage">
+				<img width="900" height="600" src="/wp-content/uploads/2012/01/sixtyeight_sunny-900x600.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image"  />
+			</div>
+			<div class="index_textbox flexcroll">
+				<div class="index_text"><h1>Sixty-Eight and Sunny</h1><br /><br />The Master's of Architecture thesis project explores our attitudes towards the thermal control of the interior environment. Modern buildings with their mechanically-controlled interiors, act as vivaria of a kind: enabling the theater of human activity indoors to proceed as though weather, climate, geography, and nighttime did not exist. The project is a rhetorical one which proposes sometimes-funny energy solutions that attempt to run the edge between the possible and the probable: solutions which may not seem completely pragmatic now, but which widen the horizon of the future's energy solutions.<br><br>
+
+Its premise is that sustainability requires us not only to be more efficient, but to think differently towards resource and envelope, and to make lifestyle changes. We must broaden our attitude towards resources to include not only the utility connections, but also any other possible sources of thermal conditioning, such as the body heat of pedestrians in high-traffic areas, or the high-velocity cool air available at higher elevations. The expectation that the inside environment always be sixty-eight degrees and 500 lumens is challenged: the building's interior spaces are choreographed to include hotter and colder regions, and occupation habits are imagined to shift seasonally. The building envelope is largely eliminated, replaced with an occupant-assembled insulation layer of off-season clothes storage, cardboard packing material from retail stores, and the like.<br><br>
+
+The thesis investigates a culture of thermal activity with which we, as occupants of glass boxes, may be unfamiliar. The resulting picture of an urban midrise at the corner of Battery & Broadway in Manhattan portrays a life much more concerned with temperature, and by extension energy consumption, than the life we know today.<br><br>
+
+M.Arch thesis advised by Sheila Kennedy, Mark Jarzombek, and Joel Lamere at MIT, Fall 2011.</div>
+			</div>
+			<a href="#" alt="/portfolio/sixty-eight-and-sunny/" rel='address:/sixty-eight-and-sunny' class="loadProjectSlidesAnchor">
+				<div class="index_project_anchor">
+					<div class="index_project_anchor_text">»</div>
+				</div>
+			</a>
+		</div>
+		<div class="index_rightContainer">
+			<div id="loadingGif">
+				<img style="position:absolute; top:-70px;left:-50px;" src="/wp-content/themes/phil-seaton/img/pageload.gif">
+			</div>
+		</div>
+	</div>
+<div class="crossbar_container" id="cont4">
+	
+	<a href="/portfolio/aqueous-potentials" rel='address:/aqueous-potentials' title="Aqueous Potentials" id="link4" alt='address:/aqueous-potentials' class="tablink">
+	<div class="crossbar_titlebar allowHover architecture energy interaction" id="bar4">
+		<div style="margin-top:-1px;">Aqueous Potentials</div>
+	</div>
+	</a>
+	
+	<div class="index_wholeContainer" id="showPostaqueous-potentials">
+		<div class="index_leftContainer">		
+			<div class="mainImage">
+				<img width="900" height="600" src="/wp-content/uploads/2012/01/aqueous_splash.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image"  srcset="/wp-content/uploads/2012/01/aqueous_splash.jpg 900w, /wp-content/uploads/2012/01/aqueous_splash-150x100.jpg 150w, /wp-content/uploads/2012/01/aqueous_splash-250x166.jpg 250w" sizes="(max-width: 900px) 100vw, 900px" />
+			</div>
+			<div class="index_textbox flexcroll">
+				<div class="index_text"><h1>Aqueous Potentials</h1><br /><br />The studio project proposes a series of testing grounds for hydrological energy generating devices located at the edge of the Boston Harbor's 'innovation district,' the slated location for a host of new high-tech business incubators.<br><br>
+
+It seeks to combine energy generation with a pleasure-seeker's sense of wonder. Its dam-like forms are employed to store and accrue energy from the daily tide in a series of large pools, each of which uses the gravity potential of the water contained to test the efficiency of new energy generating devices. The pools are also comparable to closed, flooded quarries: they are sites where members of the public can hike, swim, and boat.<br><br>
+
+The manipulation of the site's ground is used to create varying states of "energized water", but is at the same time organized for public, pleasure-seeking access, and for private, high-tech use. Waves can be produced and directed for the harvesting of surface energy; high- and low-current underwater turbines of varying size can be tested under controlled conditions; wet bio-fuels can grow in either dark or sunlit conditions; spaces can be made to flood or evacuate on command. In the same spaces, members of the public can go to the gym, participate in various watersports, swim, hike, and explore the social side of energy generation.
+
+<br><br>Rising Water Architecture Studio with Marc Tsurumaki, Fall 2010.</div>
+			</div>
+			<a href="#" alt="/portfolio/aqueous-potentials/" rel='address:/aqueous-potentials' class="loadProjectSlidesAnchor">
+				<div class="index_project_anchor">
+					<div class="index_project_anchor_text">»</div>
+				</div>
+			</a>
+		</div>
+		<div class="index_rightContainer">
+			<div id="loadingGif">
+				<img style="position:absolute; top:-70px;left:-50px;" src="/wp-content/themes/phil-seaton/img/pageload.gif">
+			</div>
+		</div>
+	</div>
+<div class="crossbar_container" id="cont5">
+	
+	<a href="/portfolio/bent-knee" rel='address:/bent-knee' title="Bent Knee" id="link5" alt='address:/bent-knee' class="tablink">
+	<div class="crossbar_titlebar allowHover architecture fabrication furniture geometry" id="bar5">
+		<div style="margin-top:-1px;">Bent Knee</div>
+	</div>
+	</a>
+	
+	<div class="index_wholeContainer" id="showPostbent-knee">
+		<div class="index_leftContainer">		
+			<div class="mainImage">
+				<img width="900" height="600" src="/wp-content/uploads/2012/01/bentkneesplash-900x600.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image"  />
+			</div>
+			<div class="index_textbox flexcroll">
+				<div class="index_text"><h1>Bent Knee</h1><br /><br />Alvar Aalto's famous "bent knee" -- a method of making apparently solid wood bend unusually tight corners by cutting slots in it to accept interwoven veneer sheets -- is reverse engineered in an effort to mine the 50-year-old method for contemporary, digital form-family members<br><br>
+
+The team came to see the interwoven sheets as an opportunity to transform <h2>stick to sheet</h2>, to produce <h2>surface from solid</h2>. A notching system is employed to ensure that the veneer sheets can be aligned properly, resulting in a system of self-jigging. The fan-like shapes that become possible are explored digitally using grasshopper as a tool to determine a family of forms related through their bent-knee cousin.<br><br>
+
+The final design of a bus-shelter sized pavilion, which could be shipped as a one-dimensional stick-like form and raised on site, reflects the bent-knee's original beauty and logic. Prototypes of typical details are fabricated at 1:1.<br><br>
+
+Academic work with Nadya Volicer & Juliet Hsu, Spring 2011.</div>
+			</div>
+			<a href="#" alt="/portfolio/bent-knee/" rel='address:/bent-knee' class="loadProjectSlidesAnchor">
+				<div class="index_project_anchor">
+					<div class="index_project_anchor_text">»</div>
+				</div>
+			</a>
+		</div>
+		<div class="index_rightContainer">
+			<div id="loadingGif">
+				<img style="position:absolute; top:-70px;left:-50px;" src="/wp-content/themes/phil-seaton/img/pageload.gif">
+			</div>
+		</div>
+	</div>
+<div class="crossbar_container" id="cont6">
+	
+	<a href="/portfolio/collective-power" rel='address:/collective-power' title="Collective Power" id="link6" alt='address:/collective-power' class="tablink">
+	<div class="crossbar_titlebar allowHover architecture energy interaction programming" id="bar6">
+		<div style="margin-top:-1px;">Collective Power</div>
+	</div>
+	</a>
+	
+	<div class="index_wholeContainer" id="showPostcollective-power">
+		<div class="index_leftContainer">		
+			<div class="mainImage">
+				<img width="900" height="600" src="/wp-content/uploads/2012/01/collective_power-900x600.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image"  />
+			</div>
+			<div class="index_textbox flexcroll">
+				<div class="index_text"><h1>Collective Power</h1><br /><br />Collective Power leverages the power of small-group peer pressure to encourage more sustainable residential energy consumption. It harnesses extant infrastructure - streetlights - and augments their functionality with a public display of aggregated usage statistics for the adjacent neighbors.<br><br>
+
+A meter-like vertical light display shows pedestrians how well a group of residents is doing as compared with their neighbors down the street; more detailed unit-level and live pricing information is available through the attendant smart phone app. By making usage statistics public and comparable, Collective Power encourages residents to make energy usage part of their social discussion.<br><br>
+
+Project with the Tangible Interfaces group at MIT's Media Lab. With Andy Payne, Melissa Chow, and Arlene Ducao, Fall 2011.</div>
+			</div>
+			<a href="#" alt="/portfolio/collective-power/" rel='address:/collective-power' class="loadProjectSlidesAnchor">
+				<div class="index_project_anchor">
+					<div class="index_project_anchor_text">»</div>
+				</div>
+			</a>
+		</div>
+		<div class="index_rightContainer">
+			<div id="loadingGif">
+				<img style="position:absolute; top:-70px;left:-50px;" src="/wp-content/themes/phil-seaton/img/pageload.gif">
+			</div>
+		</div>
+	</div>
+<div class="crossbar_container" id="cont7">
+	
+	<a href="/portfolio/biomimicry-c2bb-feathers" rel='address:/biomimicry-c2bb-feathers' title="Biomimicry » Feathers" id="link7" alt='address:/biomimicry-c2bb-feathers' class="tablink">
+	<div class="crossbar_titlebar allowHover fabrication geometry interaction programming web" id="bar7">
+		<div style="margin-top:-1px;">Biomimicry » Feathers</div>
+	</div>
+	</a>
+	
+	<div class="index_wholeContainer" id="showPostbiomimicry-c2bb-feathers">
+		<div class="index_leftContainer">		
+			<div class="mainImage">
+				<img width="900" height="600" src="/wp-content/uploads/2011/11/feathers-900x600.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image"  />
+			</div>
+			<div class="index_textbox flexcroll">
+				<div class="index_text"><h1>Biomimicry » Feathers</h1><br /><br />Initial research into the performative functions of feathers revealed microscopic hooks ("barbules") which are responsible for the organizing behavior of the individual strands ("barbs") within a feather. Depending on the scale and number of these hooks, the barbs would either self-organize into stiff "flight" feathers or retain more disorder as in insulative and buoyant "down" feathers. A difference of degree (the length and number of barbules) translates into a difference of type (between flight feathers, insulation feathers, feathers meant to aid in sensory perception, etc).
+<br><br>
+The images to the left are a part of an interactive "feather generator" which has been featured on numerous design blogs, as a tool for making pencil-drawn greeting cards, and by <a href="http://dcbryan.com/">David Bryan in a video shown on tour in live concert by DJ Kaskade</a>. The original can be located at <a href="http://www.openprocessing.org/visuals/?visualID=20673">OpenProcessing.org</a>, or, you can experiment with it on the next page.</div>
+			</div>
+			<a href="#" alt="/portfolio/biomimicry-%c2%bb-feathers/" rel='address:/biomimicry-c2bb-feathers' class="loadProjectSlidesAnchor">
+				<div class="index_project_anchor">
+					<div class="index_project_anchor_text">»</div>
+				</div>
+			</a>
+		</div>
+		<div class="index_rightContainer">
+			<div id="loadingGif">
+				<img style="position:absolute; top:-70px;left:-50px;" src="/wp-content/themes/phil-seaton/img/pageload.gif">
+			</div>
+		</div>
+	</div>
+<div class="crossbar_container" id="cont8">
+	
+	<a href="/portfolio/recoopering" rel='address:/recoopering' title="(re)Coopering" id="link8" alt='address:/recoopering' class="tablink">
+	<div class="crossbar_titlebar allowHover fabrication furniture geometry" id="bar8">
+		<div style="margin-top:-1px;">(re)Coopering</div>
+	</div>
+	</a>
+	
+	<div class="index_wholeContainer" id="showPostrecoopering">
+		<div class="index_leftContainer">		
+			<div class="mainImage">
+				<img width="900" height="600" src="/wp-content/uploads/2012/01/bench2_D-900x600.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image"  />
+			</div>
+			<div class="index_textbox flexcroll">
+				<div class="index_text"><h1>(re)Coopering</h1><br /><br />Barrel-making, or coopering, is to this day an entirely analog process by which many dissimilar staves are wrangled into nearly identical but highly complex two-degree curved barrel shapes through the use of metal hoops. If the staves could be customized digitally and the hoops made to form open shapes, a wide range of complexly curved solid surfaces could be manufactured from  solid or composite wood without molds and with minimal waste. The result would be a new flat-to-form process  available for mass customized designs.<br><br>
+
+<br><br>(Re)Coopering involves the production of "staves" with digitally-specified but hand-cut variable bevels and profiles. These highly-specific staves are assembled using high-tension wires threaded through their cores such that they are similarly able to give each other their shape. The result is a system for fabricating free-form complexly curved solid wood pieces without molds of any kind, and with minimal assembly time.
+
+<br><br>Independent Study with Chris Dewart, Fall 2011.</div>
+			</div>
+			<a href="#" alt="/portfolio/recoopering/" rel='address:/recoopering' class="loadProjectSlidesAnchor">
+				<div class="index_project_anchor">
+					<div class="index_project_anchor_text">»</div>
+				</div>
+			</a>
+		</div>
+		<div class="index_rightContainer">
+			<div id="loadingGif">
+				<img style="position:absolute; top:-70px;left:-50px;" src="/wp-content/themes/phil-seaton/img/pageload.gif">
+			</div>
+		</div>
+	</div>
+<div class="crossbar_container" id="cont9">
+	
+	<a href="/portfolio/active-segments-portfolio" rel='address:/active-segments-portfolio' title="Active Segments (Portfolio)" id="link9" alt='address:/active-segments-portfolio' class="tablink">
+	<div class="crossbar_titlebar allowHover geometry interaction programming web" id="bar9">
+		<div style="margin-top:-1px;">Active Segments (Portfolio)</div>
+	</div>
+	</a>
+	
+	<div class="index_wholeContainer" id="showPostactive-segments-portfolio">
+		<div class="index_leftContainer">		
+			<div class="mainImage">
+				<img width="900" height="600" src="/wp-content/uploads/2012/01/mit_website-900x600.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image"  />
+			</div>
+			<div class="index_textbox flexcroll">
+				<div class="index_text"><h1>Active Segments (Portfolio)</h1><br /><br />A previous version of this website engaged the user though a series of programmatically responsive line segments. Through the arrangement or dis-arrangement of these line segments, the interface was able to produce organized frameworks or playful "sandbox" like transitions. <h2>A fully functional (though un-maintained) version of the portfolio is available <a href='/old_portfolio' target="_blank">here</a></h2>. (Flash required)
+
+<br><br>To view static screenshots, click the button to the right. If you're interested, please play with the real thing!
+
+<br><br>Personal work, 2009</div>
+			</div>
+			<a href="#" alt="/portfolio/active-segments-portfolio/" rel='address:/active-segments-portfolio' class="loadProjectSlidesAnchor">
+				<div class="index_project_anchor">
+					<div class="index_project_anchor_text">»</div>
+				</div>
+			</a>
+		</div>
+		<div class="index_rightContainer">
+			<div id="loadingGif">
+				<img style="position:absolute; top:-70px;left:-50px;" src="/wp-content/themes/phil-seaton/img/pageload.gif">
+			</div>
+		</div>
+	</div>
+<div class="crossbar_container" id="cont10">
+	
+	<a href="/portfolio/daylight-delivery" rel='address:/daylight-delivery' title="Daylight Delivery" id="link10" alt='address:/daylight-delivery' class="tablink">
+	<div class="crossbar_titlebar allowHover architecture energy fabrication" id="bar10">
+		<div style="margin-top:-1px;">Daylight Delivery</div>
+	</div>
+	</a>
+	
+	<div class="index_wholeContainer" id="showPostdaylight-delivery">
+		<div class="index_leftContainer">		
+			<div class="mainImage">
+				<img width="900" height="600" src="/wp-content/uploads/2012/01/daylight_1-900x600.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image"  />
+			</div>
+			<div class="index_textbox flexcroll">
+				<div class="index_text"><h1>Daylight Delivery</h1><br /><br />Daylight delivery systems, which direct natural sunlight through a system of ducts to interior spaces within a building, are typically designed to look and function like their electric counterparts. Yet when the sun goes behind a cloud, the light's dimming becomes an inconvenience -- a perceived downside to a system which delivers light that is psychologically beneficial.<br><br>
+
+The team at <a href="http://www.kvarch.net/">KVA | matx</a>, led by Sheila Kennedy, looked to nature for inspiration of its daylight luminaire. By thinking of the ways that sunlight is mediated outdoors -- through clouds, for example, or through plants, flowers, and other natural forms, we arrived at a flat-to-form "cloud baffle" prototype which mediates the sunlight similarly, giving the sun-like characteristics of the light a magical feel, rather than an inconvenient one.</div>
+			</div>
+			<a href="#" alt="/portfolio/daylight-delivery/" rel='address:/daylight-delivery' class="loadProjectSlidesAnchor">
+				<div class="index_project_anchor">
+					<div class="index_project_anchor_text">»</div>
+				</div>
+			</a>
+		</div>
+		<div class="index_rightContainer">
+			<div id="loadingGif">
+				<img style="position:absolute; top:-70px;left:-50px;" src="/wp-content/themes/phil-seaton/img/pageload.gif">
+			</div>
+		</div>
+	</div>
+<div class="crossbar_container" id="cont11">
+	
+	<a href="/portfolio/soft-rocker" rel='address:/soft-rocker' title="SOFT Rocker" id="link11" alt='address:/soft-rocker' class="tablink">
+	<div class="crossbar_titlebar allowHover energy fabrication furniture geometry" id="bar11">
+		<div style="margin-top:-1px;">SOFT Rocker</div>
+	</div>
+	</a>
+	
+	<div class="index_wholeContainer" id="showPostsoft-rocker">
+		<div class="index_leftContainer">		
+			<div class="mainImage">
+				<img width="900" height="600" src="/wp-content/uploads/2011/12/softrocker_1-900x600.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image"  />
+			</div>
+			<div class="index_textbox flexcroll">
+				<div class="index_text"><h1>SOFT Rocker</h1><br /><br />Recharge yourself and your electronics while relaxing in the shaded comfort of a SOFT Rocker. The SOFT Rocker imagines a future where power generation becomes part of the public sphere. Rather than piping electricity from large centralized power plants which separate the consumption of fuel from the use of its energy, the SOFT Rockers allow small amounts of power to be produced and employed locally in a power paradigm that imagines power generation to be distributed, clean, and fun.<br><br>
+
+
+By positioning your body inside the unique leaf-shaped rocker, parametrically customized to accommodate the sun angles of a particular latitude, you control the vertical axis, making sure to face the sun's altitude. Get out and grab the handle to face its azimuth throughout the day. At night, the Rockers' TRON-like glow allows them to serve as community gathering points while powering iPods, speakers, and other small devices.<br><br>
+
+The Rockers' unique shape is crafted by cutting a customized set of "teeth" into two opposing flat sheets of MDF. Once the two sides are "zipped" together with glue in between, the sheets take shape automatically in a vacuum bag without the need for any secondary formwork. The technique, pioneered under the name <a href="http://www.schindlersalmeron.com/index.php?option=com_content&task=view&id=27&Itemid=29">ZipShape</a> by SchindlerSalmeron in Germany, is extended into a multi-sheet system, allowing us to make a continuous, custom-formed 29' curve.
+
+Project Under Sheila Kennedy, Professor of Arch at MIT. Team: Phil Seaton, Shevy Rockcastle, Jungmin Nam, Kate Bogunschutz, James Bayless, Radlab, Inc.</div>
+			</div>
+			<a href="#" alt="/portfolio/soft-rocker/" rel='address:/soft-rocker' class="loadProjectSlidesAnchor">
+				<div class="index_project_anchor">
+					<div class="index_project_anchor_text">»</div>
+				</div>
+			</a>
+		</div>
+		<div class="index_rightContainer">
+			<div id="loadingGif">
+				<img style="position:absolute; top:-70px;left:-50px;" src="/wp-content/themes/phil-seaton/img/pageload.gif">
+			</div>
+		</div>
+	</div>
+<div class="crossbar_container" id="cont12">
+	
+	<a href="/portfolio/modular-shelving" rel='address:/modular-shelving' title="Modular Shelving" id="link12" alt='address:/modular-shelving' class="tablink">
+	<div class="crossbar_titlebar allowHover furniture" id="bar12">
+		<div style="margin-top:-1px;">Modular Shelving</div>
+	</div>
+	</a>
+	
+	<div class="index_wholeContainer" id="showPostmodular-shelving">
+		<div class="index_leftContainer">		
+			<div class="mainImage">
+				<img width="900" height="600" src="/wp-content/uploads/2011/11/modshelf_1-900x600.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image"  />
+			</div>
+			<div class="index_textbox flexcroll">
+				<div class="index_text"><h1>Modular Shelving</h1><br /><br />A single L-shaped wooden piece, with carefully placed holes which allow it to be secured to adjacent units in multiple configurations, creates the opportunity for multiple types and scales of furniture to be made simply from a single unit.</div>
+			</div>
+			<a href="#" alt="/portfolio/modular-shelving/" rel='address:/modular-shelving' class="loadProjectSlidesAnchor">
+				<div class="index_project_anchor">
+					<div class="index_project_anchor_text">»</div>
+				</div>
+			</a>
+		</div>
+		<div class="index_rightContainer">
+			<div id="loadingGif">
+				<img style="position:absolute; top:-70px;left:-50px;" src="/wp-content/themes/phil-seaton/img/pageload.gif">
+			</div>
+		</div>
+	</div>
+<div class="crossbar_container" id="cont13">
+	
+	<a href="/portfolio/nightstand" rel='address:/nightstand' title="Nightstand" id="link13" alt='address:/nightstand' class="tablink">
+	<div class="crossbar_titlebar allowHover fabrication furniture geometry" id="bar13">
+		<div style="margin-top:-1px;">Nightstand</div>
+	</div>
+	</a>
+	
+	<div class="index_wholeContainer" id="showPostnightstand">
+		<div class="index_leftContainer">		
+			<div class="mainImage">
+				<img width="900" height="600" src="/wp-content/uploads/2011/11/nightstand-900x600.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image"  />
+			</div>
+			<div class="index_textbox flexcroll">
+				<div class="index_text"><h1>Nightstand</h1><br /><br />Plywood is typically seen as an isotropic material -- one which is equally strong in all directions -- and because of its non-directional strength we tend to think of it in the flat, as a sheet good. Yet bent plywood maintains the isotropy of plywood while adopting non-flat shapes, opening the door for designers to use it structurally in ways that no other material could handle.
+<br><br>
+The form of the nightstands is conceived to leverage the isotropy and form-flexibility bent plywood simultaneously. The minimum-thickness nightstands mount directly to the wall, and allow their users to store items in both a more private "interior" space as well as on the more publicly accessible top surface.
+
+<br><br>
+Personal project, 2007.</div>
+			</div>
+			<a href="#" alt="/portfolio/nightstand/" rel='address:/nightstand' class="loadProjectSlidesAnchor">
+				<div class="index_project_anchor">
+					<div class="index_project_anchor_text">»</div>
+				</div>
+			</a>
+		</div>
+		<div class="index_rightContainer">
+			<div id="loadingGif">
+				<img style="position:absolute; top:-70px;left:-50px;" src="/wp-content/themes/phil-seaton/img/pageload.gif">
+			</div>
+		</div>
+	</div>
+<div class="crossbar_container" id="cont14">
+	
+	<a href="/portfolio/scissor-chair" rel='address:/scissor-chair' title="Scissor Chair" id="link14" alt='address:/scissor-chair' class="tablink">
+	<div class="crossbar_titlebar allowHover fabrication furniture geometry" id="bar14">
+		<div style="margin-top:-1px;">Scissor Chair</div>
+	</div>
+	</a>
+	
+	<div class="index_wholeContainer" id="showPostscissor-chair">
+		<div class="index_leftContainer">		
+			<div class="mainImage">
+				<img width="900" height="600" src="/wp-content/uploads/2011/11/cnc_chair_8-900x600.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image"  />
+			</div>
+			<div class="index_textbox flexcroll">
+				<div class="index_text"><h1>Scissor Chair</h1><br /><br />The Scissor Chair explores the limitations of a 2-1/2 axis CNC routing process, which is capable only of orthogonal cuts, in the design of a chair around non-orthogonal glue-free joints.<br><br>
+
+A handful of joint prototypes suggest a "typical" detail, but the imposition of the chair's profile and testing of physical limitations using 1:4 scale models lead quickly to complex fully 3-dimensional joint geometries that go far beyond simple 2-D intersections. By designing each joint according to the glue-free non-orthogonal principles set out at the beginning, a fully stable and beautiful design emerges from the material and geometric logics of the system.
+
+<br><br>
+Academic work with Larry Sass, Fall 2009.</div>
+			</div>
+			<a href="#" alt="/portfolio/scissor-chair/" rel='address:/scissor-chair' class="loadProjectSlidesAnchor">
+				<div class="index_project_anchor">
+					<div class="index_project_anchor_text">»</div>
+				</div>
+			</a>
+		</div>
+		<div class="index_rightContainer">
+			<div id="loadingGif">
+				<img style="position:absolute; top:-70px;left:-50px;" src="/wp-content/themes/phil-seaton/img/pageload.gif">
+			</div>
+		</div>
+	</div><div class="crossbar_container" id="cont15"><div class="crossbar_titlebar"></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div>
+
+</div>
+<!--  END OF THE LOOP-->
+
+
+
+
+
+<div id="load_post" name="load_post" class="load_post">
+<div style="position:absolute;top:40px;left:0;width:2000px;height:12px;background-color:#888;"></div>
+<div style="position:absolute;top:60px;left:0;width:2000px;height:12px;background-color:#333;"></div>
+<div id="loadingGif">
+<img style="position:absolute; top:-70px;left:-50px;" src="/wp-content/themes/phil-seaton/img/pageload.gif">
+</div>
+</div>
+</div>
+
+
+<div style="position:absolute;bottom:0;right:0;z-index:10;">
+<a href='#' rel='address:/home' id='clickHome'>
+<span style="color:#BBB;font-size:10px;	font-family: Arial, Helvetica, sans-serif;font-weight: normal;white-space:pre-wrap">website design & WordPress theme © 2012 Phil Seaton  </span>
+</a>
+</div>
+
+</div>
+
+<div class="clearfix"></div>
+
+</body>
+</html>

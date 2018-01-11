@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
 
-<title>Phil Seaton &#8211; Phil Seaton</title>
+<title>Orchestra Data Science &#8211; Phil Seaton</title>
 <link rel='dns-prefetch' href='//s.w.org' />
 <link rel="alternate" type="application/rss+xml" title="Phil Seaton &raquo; Feed" href="/feed/" />
 <link rel="alternate" type="application/rss+xml" title="Phil Seaton &raquo; Comments Feed" href="/comments/feed/" />
@@ -34,12 +34,13 @@ img.emoji {
 <link rel='https://api.w.org/' href='/wp-json/' />
 <link rel="EditURI" type="application/rsd+xml" title="RSD" href="/xmlrpc.php?rsd" />
 <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="/wp-includes/wlwmanifest.xml" /> 
-<link rel='prev' title='Orchestra Data Science' href='/orchestra-visual-flow-programming-for-python/' />
+<link rel='prev' title='STL Thumbnailer' href='/stl-thumbnailer/' />
+<link rel='next' title='Phil Seaton' href='/about-phil/' />
 <meta name="generator" content="WordPress 4.9.1" />
-<link rel="canonical" href="/about-phil/" />
-<link rel='shortlink' href='/?p=1' />
-<link rel="alternate" type="application/json+oembed" href="/wp-json/oembed/1.0/embed?url=%2Fabout-phil%2F" />
-<link rel="alternate" type="text/xml+oembed" href="/wp-json/oembed/1.0/embed?url=%2Fabout-phil%2F&#038;format=xml" />
+<link rel="canonical" href="/orchestra-visual-flow-programming-for-python/" />
+<link rel='shortlink' href='/?p=27' />
+<link rel="alternate" type="application/json+oembed" href="/wp-json/oembed/1.0/embed?url=%2Forchestra-visual-flow-programming-for-python%2F" />
+<link rel="alternate" type="text/xml+oembed" href="/wp-json/oembed/1.0/embed?url=%2Forchestra-visual-flow-programming-for-python%2F&#038;format=xml" />
 	<style id="independent-publisher-2-custom-header-css" type="text/css">
 			.site-title,
 		.site-description,
@@ -80,7 +81,7 @@ img.emoji {
 .site-hero-section {/* Until a self-photo becomes available */display: none!important;}		</style>
 	</head>
 
-<body class="post-template-default single single-post postid-1 single-format-standard">
+<body class="post-template-default single single-post postid-27 single-format-standard">
 
 <div id="page" class="hfeed site">
 	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
@@ -113,9 +114,9 @@ img.emoji {
 
 		
 			
-<article id="post-1" class="post-1 post type-post status-publish format-standard hentry category-uncategorized">
+<article id="post-27" class="post-27 post type-post status-publish format-standard hentry category-uncategorized">
 			<header class="entry-header">
-			<h1 class="entry-title">Phil Seaton</h1>		</header><!-- .entry-header -->		<div class="entry-meta">
+			<h1 class="entry-title">Orchestra Data Science</h1>		</header><!-- .entry-header -->		<div class="entry-meta">
 			<span class="byline">
 				<a href="/author/pseaton/" title="Posts by pseaton" rel="author">pseaton</a>			</span>
 							<span class="cat-links">
@@ -123,14 +124,25 @@ img.emoji {
 			
 			
 			<span class="published-on">
-				<time class="entry-date published" datetime="2018-01-10T07:05:48+00:00">January 10, 2018</time><time class="updated" datetime="2018-01-11T07:21:35+00:00">January 11, 2018</time>			</span>
+				<time class="entry-date published" datetime="2018-01-10T06:19:45+00:00">January 10, 2018</time><time class="updated" datetime="2018-01-11T06:34:40+00:00">January 11, 2018</time>			</span>
 
 					</div><!-- .entry-meta -->
 	
 	<div class="entry-content">
-		<p>I&#8217;m an MIT-trained engineering leader in the SF Bay Area. By day, I build, manage, and scale high-velocity software development teams. By night, I keep my technical skills honed by programming a range of side projects. Some of my projects and experiments follow.</p>
-<p>You&#8217;ll see some themes: Visual Flow Programming, 3D Geometry / CAD, Web Browsers doing things servers normally do, and connections to my computational design master&#8217;s work. Most are demo-able in some way. If something catches your eye, please reach out.</p>
-<p>A current CV can be found <a href="http://monitoring.strandedcity.com/wp-content/uploads/2018/01/Phil-Seaton-Resume-2017-Sept.pdf">here</a>.</p>
+		<p>Orchestra Data Science is a visual flow programming interface in pure JavaScript that runs in <a href="http://jupyter.org/">Python Jupyter Notebooks</a>. Orchestra enables a non-technical (or at least <em>less</em> technical) audience to work with big data, and eventually machine learning algorithms, without knowing Python syntax or paradigms. Complex programming and data-ingestion tasks such as deploying an API micro-service to munge live streaming data become possible without writing a single line of code. For expert users, it&#8217;s easy to &#8220;eject&#8221; and employ custom Python simultaneously.</p>
+<p><img class="alignnone size-full wp-image-70" src="/wp-content/uploads/orchestra-data-science.png" alt="" width="1352" height="939" srcset="/wp-content/uploads/orchestra-data-science.png 1352w, /wp-content/uploads/orchestra-data-science-300x208.png 300w, /wp-content/uploads/orchestra-data-science-768x533.png 768w, /wp-content/uploads/orchestra-data-science-1024x711.png 1024w, /wp-content/uploads/orchestra-data-science-1100x764.png 1100w" sizes="(max-width: 1352px) 100vw, 1352px" /></p>
+<p>Orchestra has two especially interesting areas technically.</p>
+<p>First, the workspace view. Proofs of concept using simple svg or canvas rendering showed that the curved wires connecting components became untenably slow for even very small Orchestra projects, perhaps with only a few dozen components in the workspace. So I switched to WebGL rendering, which enables me to zoom, animate, and selectively redraw wires performantly. However WebGL makes other display requirements harder. Simple CSS styling is helpful, but for a project where users need to read and type input text as well as trigger numerous browser-like interactions such as hover, click, and drag, writing everything in WebGL implied a step function in complexity, given the free stuff that comes with normal DOM elements and CSS.</p>
+<p>Orchestra uses both simultaneously. A WebGL layer and CSS layer with normal DOM elements are superimposed, and controlled simultaneously by threejs. CSS transforms allow the HTML to zoom smoothly, while WebGL allows very large workspaces to render without performance hits.</p>
+<p>Secondly, Orchestra tackles the challenging problem of tracking changes that occur anywhere inside the user-generated &#8220;graph&#8221; so it can understand (even without understanding Python) when components will require recalculation and updates. It does this using the idea of a &#8220;pulse&#8221; that propagates though the graph from any input that changes. As the pulse propagates, it counts the number of times it sees each component so that later, during the recalculation phase, components can ignore change events that would trigger duplicate calculations.</p>
+<p>Documentation for the installation and use of Orchestra exists at the Github links below.</p>
+<div class="projectSummarySection">
+<p><span class="titleText">Dates:</span> <span class="summaryText">2017 &#8211; Ongoing</span></p>
+<p><span class="titleText">Explorations:</span> <span class="summaryText">Superimposed DOM and WebGL zooming user interfaces; Graph mapping by &#8220;pulses&#8221; to prevent costly extra calculations</span></p>
+<p><span class="titleText">Technologies:</span> <span class="summaryText">JavaScript (Backbone, ThreeJS, RequireJS, Grunt), iPython, Jupyter Notebooks</span></p>
+<p><span class="titleText">Github:</span> <span class="summaryText"><a href="https://github.com/strandedcity/orchestra-jupyter/">Repo</a> and <a href="https://github.com/strandedcity/orchestra-jupyter/wiki">Tutorials</a></span></p>
+<p><span class="titleText">Live Demo:</span> <span class="summaryText">Coming Soon (please enquire). Feel free to install it and follow the tutorials meanwhile!</span></p>
+</div>
 	</div><!-- .entry-content -->
 
 	<div class="entry-footer">
@@ -153,14 +165,14 @@ img.emoji {
 </div><!-- .entry-auhtor -->
 		<div class="site-posted-on">
 			<strong>Published</strong>
-			<time class="entry-date published" datetime="2018-01-10T07:05:48+00:00">January 10, 2018</time><time class="updated" datetime="2018-01-11T07:21:35+00:00">January 11, 2018</time>		</div><!-- .site-posted-on -->
+			<time class="entry-date published" datetime="2018-01-10T06:19:45+00:00">January 10, 2018</time><time class="updated" datetime="2018-01-11T06:34:40+00:00">January 11, 2018</time>		</div><!-- .site-posted-on -->
 	</div>
 </article><!-- #post-## -->
 
 			
 	<nav class="navigation post-navigation" role="navigation">
 		<h2 class="screen-reader-text">Post navigation</h2>
-		<div class="nav-links"><div class="nav-previous"><a href="/orchestra-visual-flow-programming-for-python/" rel="prev"><span class="meta-nav screen-reader-text">Previous Post</span> Orchestra Data Science</a></div></div>
+		<div class="nav-links"><div class="nav-previous"><a href="/stl-thumbnailer/" rel="prev"><span class="meta-nav screen-reader-text">Previous Post</span> STL Thumbnailer</a></div><div class="nav-next"><a href="/about-phil/" rel="next"><span class="meta-nav screen-reader-text">Next Post</span> Phil Seaton</a></div></div>
 	</nav>
 			
 		

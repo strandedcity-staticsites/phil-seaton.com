@@ -1,148 +1,46 @@
-<!DOCTYPE html>
-<html lang="en-US">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="profile" href="http://gmpg.org/xfn/11">
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
 
-<title>Phil Seaton</title>
-<link rel='dns-prefetch' href='//s.w.org' />
-<link rel="alternate" type="application/rss+xml" title="Phil Seaton &raquo; Feed" href="/feed/" />
-<link rel="alternate" type="application/rss+xml" title="Phil Seaton &raquo; Comments Feed" href="/comments/feed/" />
-		<script type="text/javascript">
-			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.3\/svg\/","svgExt":".svg","source":{"concatemoji":"\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.9.1"}};
-			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55358,56794,8205,9794,65039],[55358,56794,8203,9794,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
-		</script>
-		<style type="text/css">
-img.wp-smiley,
-img.emoji {
-	display: inline !important;
-	border: none !important;
-	box-shadow: none !important;
-	height: 1em !important;
-	width: 1em !important;
-	margin: 0 .07em !important;
-	vertical-align: -0.1em !important;
-	background: none !important;
-	padding: 0 !important;
-}
-</style>
-<link rel='stylesheet' id='genericons-css'  href='/wp-content/themes/independent-publisher-2-wpcom/genericons/genericons.css?ver=3.3.1' type='text/css' media='all' />
-<link rel='stylesheet' id='independent-publisher-2-style-css'  href='/wp-content/themes/independent-publisher-2-wpcom/style.css?ver=4.9.1' type='text/css' media='all' />
-<script type='text/javascript' src='/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
-<script type='text/javascript' src='/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
-<link rel='https://api.w.org/' href='/wp-json/' />
-<link rel="EditURI" type="application/rsd+xml" title="RSD" href="/xmlrpc.php?rsd" />
-<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="/wp-includes/wlwmanifest.xml" /> 
-<meta name="generator" content="WordPress 4.9.1" />
-	<style id="independent-publisher-2-custom-header-css" type="text/css">
-			.site-title,
-		.site-description,
-		#hero-header #hero-social-navigation {
-			clip: rect(1px, 1px, 1px, 1px);
-			position: absolute;
-		}
-		</style>
-			<style type="text/css" id="wp-custom-css">
-			.entry-author-wrapper {
-	display: none;
-}
-.entry-meta {
-	display: none;
-}
-.projectSummarySection {
-	padding-top: 20px;
-	border-top: 1px dotted #CCC;
-	font-size: 15px;
-}
-.projectSummarySection .summaryText {
-	display: inline-block;
-	margin-left: 0;
-	width: 75%;
-}
-.projectSummarySection .titleText {
-	display: inline-block;
-	width: 18%;
-	vertical-align: top;
-	font-weight: 700;
-	color: #333;
-}
+<channel>
+	<title>pseaton &#8211; Phil Seaton</title>
+	<atom:link href="/author/pseaton/feed/" rel="self" type="application/rss+xml" />
+	<link></link>
+	<description></description>
+	<lastBuildDate>Thu, 11 Jan 2018 09:14:51 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.1</generator>
+	<item>
+		<title>Phil Seaton</title>
+		<link>/about-phil/</link>
+		<pubDate>Wed, 10 Jan 2018 07:05:48 +0000</pubDate>
+		<dc:creator><![CDATA[pseaton]]></dc:creator>
+				<category><![CDATA[Uncategorized]]></category>
 
-@media only screen and (max-width: 500px) {
-	.projectSummarySection span { width: 100%!important;}
-}
-
-.site-hero-section {/* Until a self-photo becomes available */display: none!important;}		</style>
-	</head>
-
-<body class="home blog">
-
-<div id="page" class="hfeed site">
-	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
-
-	<div id="hero-header" class="site-hero-section">
-		<header id="masthead" class="site-header" role="banner">
-			<div class="inner">
-				<div class="site-branding">
-					
-											<a class="site-logo-link" href="/">
-							<img alt="" class="site-logo-image no-grav" width="80" height="80" src="http://0.gravatar.com/avatar/007272222a2d2f56d82be24d4a351085?s=160&#038;d=mm&#038;r=g" />
-						</a><!-- .site-logo-link -->
-													<h1 class="site-title"><a href="/" rel="home">Phil Seaton</a></h1>
-										</div><!-- .site-branding -->
-
-				
-				
-			</div><!-- .inner -->
-		</header><!-- #masthead -->
-	</div>
-
-		
-	
-	
-	<div id="content-wrapper" class="content-wrapper">
-		<div id="content" class="site-content">
-
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
-
-		
-			
-						
-				
-<article id="post-1" class="post-1 post type-post status-publish format-standard hentry category-uncategorized">
-			<header class="entry-header">
-			<h1 class="entry-title"><a href="/about-phil/" rel="bookmark">Phil Seaton</a></h1>		</header><!-- .entry-header -->	
-	<div class="entry-content">
-		<p>I&#8217;m an MIT-trained engineering leader in the SF Bay Area. By day, I build, manage, and scale high-velocity software development teams. By night, I keep my technical skills honed by programming a range of side projects. Some of my projects and experiments follow.</p>
+		<guid isPermaLink="false">/?p=1</guid>
+		<description><![CDATA[I&#8217;m an MIT-trained engineering leader in the SF Bay Area. By day, I build, manage, and scale high-velocity software development teams. By night, I keep my technical skills honed by programming a range of side projects. Some of my projects and experiments follow. You&#8217;ll see some themes: Visual Flow Programming, 3D Geometry / CAD, Web &#8230; <a href="/about-phil/" class="more-link">Continue reading <span class="screen-reader-text">Phil Seaton</span> <span class="meta-nav">&#8594;</span></a>]]></description>
+				<content:encoded><![CDATA[<p>I&#8217;m an MIT-trained engineering leader in the SF Bay Area. By day, I build, manage, and scale high-velocity software development teams. By night, I keep my technical skills honed by programming a range of side projects. Some of my projects and experiments follow.</p>
 <p>You&#8217;ll see some themes: Visual Flow Programming, 3D Geometry / CAD, Web Browsers doing things servers normally do, and connections to my computational design master&#8217;s work. Most are demo-able in some way. If something catches your eye, please reach out.</p>
-<p>A current CV can be found <a href="http://monitoring.strandedcity.com/wp-content/uploads/2018/01/Phil-Seaton-Resume-2017-Sept.pdf">here</a>.</p>
-	</div><!-- .entry-content -->
+<p>A current CV can be found <a href="/wp-content/uploads/2018/01/Phil-Seaton-Resume-2017-Sept.pdf">here</a>.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Orchestra Data Science</title>
+		<link>/orchestra-visual-flow-programming-for-python/</link>
+		<pubDate>Wed, 10 Jan 2018 06:19:45 +0000</pubDate>
+		<dc:creator><![CDATA[pseaton]]></dc:creator>
+				<category><![CDATA[Uncategorized]]></category>
 
-	<footer class="entry-footer">
-		
-				<div class="entry-meta">
-			<span class="byline">
-				<a href="/author/pseaton/" title="Posts by pseaton" rel="author">pseaton</a>			</span>
-							<span class="cat-links">
-					<a href="/category/uncategorized/" rel="category tag">Uncategorized</a>				</span><!-- .cat-links -->
-			
-			
-			<span class="published-on">
-									<a href="/about-phil/" rel="bookmark"><time class="entry-date published" datetime="2018-01-10T07:05:48+00:00">January 10, 2018</time><time class="updated" datetime="2018-01-11T07:21:35+00:00">January 11, 2018</time></a>
-							</span>
-
-					</div><!-- .entry-meta -->
-		</footer><!-- .entry-footer -->
-</article><!-- #post-## -->
-
-			
-				
-<article id="post-27" class="post-27 post type-post status-publish format-standard hentry category-uncategorized">
-			<header class="entry-header">
-			<h1 class="entry-title"><a href="/orchestra-visual-flow-programming-for-python/" rel="bookmark">Orchestra Data Science</a></h1>		</header><!-- .entry-header -->	
-	<div class="entry-content">
-		<p>Orchestra Data Science is a visual flow programming interface in pure JavaScript that runs in <a href="http://jupyter.org/">Python Jupyter Notebooks</a>. Orchestra enables a non-technical (or at least <em>less</em> technical) audience to work with big data, and eventually machine learning algorithms, without knowing Python syntax or paradigms. Complex programming and data-ingestion tasks such as deploying an API micro-service to munge live streaming data become possible without writing a single line of code. For expert users, it&#8217;s easy to &#8220;eject&#8221; and employ custom Python simultaneously.</p>
+		<guid isPermaLink="false">/?p=27</guid>
+		<description><![CDATA[Orchestra Data Science is a visual flow programming interface in pure JavaScript that runs in Python Jupyter Notebooks. Orchestra enables a non-technical (or at least less technical) audience to work with big data, and eventually machine learning algorithms, without knowing Python syntax or paradigms. Complex programming and data-ingestion tasks such as deploying an API micro-service to &#8230; <a href="/orchestra-visual-flow-programming-for-python/" class="more-link">Continue reading <span class="screen-reader-text">Orchestra Data Science</span> <span class="meta-nav">&#8594;</span></a>]]></description>
+				<content:encoded><![CDATA[<p>Orchestra Data Science is a visual flow programming interface in pure JavaScript that runs in <a href="http://jupyter.org/">Python Jupyter Notebooks</a>. Orchestra enables a non-technical (or at least <em>less</em> technical) audience to work with big data, and eventually machine learning algorithms, without knowing Python syntax or paradigms. Complex programming and data-ingestion tasks such as deploying an API micro-service to munge live streaming data become possible without writing a single line of code. For expert users, it&#8217;s easy to &#8220;eject&#8221; and employ custom Python simultaneously.</p>
 <p><img class="alignnone size-full wp-image-70" src="/wp-content/uploads/orchestra-data-science.png" alt="" width="1352" height="939" srcset="/wp-content/uploads/orchestra-data-science.png 1352w, /wp-content/uploads/orchestra-data-science-300x208.png 300w, /wp-content/uploads/orchestra-data-science-768x533.png 768w, /wp-content/uploads/orchestra-data-science-1024x711.png 1024w, /wp-content/uploads/orchestra-data-science-1100x764.png 1100w" sizes="(max-width: 1352px) 100vw, 1352px" /></p>
 <p>Orchestra has two especially interesting areas technically.</p>
 <p>First, the workspace view. Proofs of concept using simple svg or canvas rendering showed that the curved wires connecting components became untenably slow for even very small Orchestra projects, perhaps with only a few dozen components in the workspace. So I switched to WebGL rendering, which enables me to zoom, animate, and selectively redraw wires performantly. However WebGL makes other display requirements harder. Simple CSS styling is helpful, but for a project where users need to read and type input text as well as trigger numerous browser-like interactions such as hover, click, and drag, writing everything in WebGL implied a step function in complexity, given the free stuff that comes with normal DOM elements and CSS.</p>
@@ -156,32 +54,18 @@ img.emoji {
 <p><span class="titleText">Github:</span> <span class="summaryText"><a href="https://github.com/strandedcity/orchestra-jupyter/">Repo</a> and <a href="https://github.com/strandedcity/orchestra-jupyter/wiki">Tutorials</a></span></p>
 <p><span class="titleText">Live Demo:</span> <span class="summaryText">Coming Soon (please enquire). Feel free to install it and follow the tutorials meanwhile!</span></p>
 </div>
-	</div><!-- .entry-content -->
+]]></content:encoded>
+			</item>
+		<item>
+		<title>STL Thumbnailer</title>
+		<link>/stl-thumbnailer/</link>
+		<pubDate>Tue, 09 Jan 2018 08:29:43 +0000</pubDate>
+		<dc:creator><![CDATA[pseaton]]></dc:creator>
+				<category><![CDATA[Uncategorized]]></category>
 
-	<footer class="entry-footer">
-		
-				<div class="entry-meta">
-			<span class="byline">
-				<a href="/author/pseaton/" title="Posts by pseaton" rel="author">pseaton</a>			</span>
-							<span class="cat-links">
-					<a href="/category/uncategorized/" rel="category tag">Uncategorized</a>				</span><!-- .cat-links -->
-			
-			
-			<span class="published-on">
-									<a href="/orchestra-visual-flow-programming-for-python/" rel="bookmark"><time class="entry-date published" datetime="2018-01-10T06:19:45+00:00">January 10, 2018</time><time class="updated" datetime="2018-01-11T06:34:40+00:00">January 11, 2018</time></a>
-							</span>
-
-					</div><!-- .entry-meta -->
-		</footer><!-- .entry-footer -->
-</article><!-- #post-## -->
-
-			
-				
-<article id="post-93" class="post-93 post type-post status-publish format-standard hentry category-uncategorized">
-			<header class="entry-header">
-			<h1 class="entry-title"><a href="/stl-thumbnailer/" rel="bookmark">STL Thumbnailer</a></h1>		</header><!-- .entry-header -->	
-	<div class="entry-content">
-		<p>The rare open-sourced work project! I was its sole contributor, one of my last projects before leaving. The STL Thumbnailer is designed to create fast previews of user-supplied STL files. The previews are simple wireframes, without lighting or textures (limitations imposed by the dependency Node-Canvas), but they come back fast. <em>Very</em> fast. Autodesk&#8217;s &#8220;Forge API&#8221; has a service that provides thumbnails. They <em>do </em>have lighting and textures but they look terrible and take a very long time (usually 5-6 minutes). By contrast, this open-source NPM package returns nice-looking wireframes in high resolution in fractions of a second.</p>
+		<guid isPermaLink="false">/?p=93</guid>
+		<description><![CDATA[The rare open-sourced work project! I was its sole contributor, one of my last projects before leaving. The STL Thumbnailer is designed to create fast previews of user-supplied STL files. The previews are simple wireframes, without lighting or textures (limitations imposed by the dependency Node-Canvas), but they come back fast. Very fast. Autodesk&#8217;s &#8220;Forge API&#8221; has &#8230; <a href="/stl-thumbnailer/" class="more-link">Continue reading <span class="screen-reader-text">STL Thumbnailer</span> <span class="meta-nav">&#8594;</span></a>]]></description>
+				<content:encoded><![CDATA[<p>The rare open-sourced work project! I was its sole contributor, one of my last projects before leaving. The STL Thumbnailer is designed to create fast previews of user-supplied STL files. The previews are simple wireframes, without lighting or textures (limitations imposed by the dependency Node-Canvas), but they come back fast. <em>Very</em> fast. Autodesk&#8217;s &#8220;Forge API&#8221; has a service that provides thumbnails. They <em>do </em>have lighting and textures but they look terrible and take a very long time (usually 5-6 minutes). By contrast, this open-source NPM package returns nice-looking wireframes in high resolution in fractions of a second.</p>
 <p><img class="aligncenter size-full wp-image-95" src="/wp-content/uploads/stl-output.png" alt="" width="500" height="500" srcset="/wp-content/uploads/stl-output.png 500w, /wp-content/uploads/stl-output-150x150.png 150w, /wp-content/uploads/stl-output-300x300.png 300w" sizes="(max-width: 500px) 100vw, 500px" /></p>
 <p>It works by creating a ThreeJS scene, importing the STL, then rendering it using Node-Canvas, and returning the image to the user (in this case, a node developer). It&#8217;s possible, using this package, to create a simple &#8220;STL Thumbnailer&#8221; service in a matter of minutes. Instructables uses this for all user-uploaded STLs to create friendly previews before loading the full 3D view of the model.</p>
 <div class="projectSummarySection">
@@ -191,32 +75,18 @@ img.emoji {
 <p><span class="titleText">NPM / Github:</span> <span class="summaryText"><a href="https://www.npmjs.com/package/node-stl-thumbnailer">Package on NPM</a> and <a href="https://github.com/instructables/node-stl-thumbnailer">Source on Github</a></span></p>
 <p><span class="titleText">Live Demo:</span> <span class="summaryText">Coming Soon (please enquire).</span></p>
 </div>
-	</div><!-- .entry-content -->
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Quarto</title>
+		<link>/quarto/</link>
+		<pubDate>Tue, 09 Jan 2018 06:56:40 +0000</pubDate>
+		<dc:creator><![CDATA[pseaton]]></dc:creator>
+				<category><![CDATA[Uncategorized]]></category>
 
-	<footer class="entry-footer">
-		
-				<div class="entry-meta">
-			<span class="byline">
-				<a href="/author/pseaton/" title="Posts by pseaton" rel="author">pseaton</a>			</span>
-							<span class="cat-links">
-					<a href="/category/uncategorized/" rel="category tag">Uncategorized</a>				</span><!-- .cat-links -->
-			
-			
-			<span class="published-on">
-									<a href="/stl-thumbnailer/" rel="bookmark"><time class="entry-date published" datetime="2018-01-09T08:29:43+00:00">January 9, 2018</time><time class="updated" datetime="2018-01-11T08:33:35+00:00">January 11, 2018</time></a>
-							</span>
-
-					</div><!-- .entry-meta -->
-		</footer><!-- .entry-footer -->
-</article><!-- #post-## -->
-
-			
-				
-<article id="post-74" class="post-74 post type-post status-publish format-standard hentry category-uncategorized">
-			<header class="entry-header">
-			<h1 class="entry-title"><a href="/quarto/" rel="bookmark">Quarto</a></h1>		</header><!-- .entry-header -->	
-	<div class="entry-content">
-		<p><a href="https://www.quarto.io/"><img class="alignnone size-full wp-image-75" src="/wp-content/uploads/quarto-homepage.png" alt="" width="1352" height="939" srcset="/wp-content/uploads/quarto-homepage.png 1352w, /wp-content/uploads/quarto-homepage-300x208.png 300w, /wp-content/uploads/quarto-homepage-768x533.png 768w, /wp-content/uploads/quarto-homepage-1024x711.png 1024w, /wp-content/uploads/quarto-homepage-1100x764.png 1100w" sizes="(max-width: 1352px) 100vw, 1352px" /></a></p>
+		<guid isPermaLink="false">/?p=74</guid>
+		<description><![CDATA[Quarto was born of a surprising problem: my wife and I, both architects by training, were unable to find a simple iPad app that served our needs for an architecture portfolio. We wanted an app with absolutely no cruft that could safely be handed over to an interviewer without worrying that they would push the &#8230; <a href="/quarto/" class="more-link">Continue reading <span class="screen-reader-text">Quarto</span> <span class="meta-nav">&#8594;</span></a>]]></description>
+				<content:encoded><![CDATA[<p><a href="https://www.quarto.io/"><img class="alignnone size-full wp-image-75" src="/wp-content/uploads/quarto-homepage.png" alt="" width="1352" height="939" srcset="/wp-content/uploads/quarto-homepage.png 1352w, /wp-content/uploads/quarto-homepage-300x208.png 300w, /wp-content/uploads/quarto-homepage-768x533.png 768w, /wp-content/uploads/quarto-homepage-1024x711.png 1024w, /wp-content/uploads/quarto-homepage-1100x764.png 1100w" sizes="(max-width: 1352px) 100vw, 1352px" /></a></p>
 <figure id="attachment_78" style="max-width: 300px" class="wp-caption alignleft"><img src="/wp-content/uploads/quarto-ipad-300x225.jpg" alt="" width="300" height="225" class="size-medium wp-image-78" srcset="/wp-content/uploads/quarto-ipad-300x225.jpg 300w, /wp-content/uploads/quarto-ipad.jpg 552w" sizes="(max-width: 300px) 100vw, 300px" /><figcaption class="wp-caption-text">Quarto as seen on the iPad. Share menu showing.</figcaption></figure>
 <p>Quarto was born of a surprising problem: my wife and I, both architects by training, were unable to find a simple iPad app that served our needs for an architecture portfolio. We wanted an app with absolutely no cruft that could safely be handed over to an interviewer without worrying that they would push the wrong button (ie, <em>zero</em><strong> </strong>admin UI). Similarly, all of the interactions needed to be completely expected. It should work like the &#8220;Photos&#8221; app, but give better controls for organizing which photos appear and, ideally, be built on a laptop and sync&#8217;d to the iPad (rather than trying to build on the iPad itself).</p>
 <figure id="attachment_76" style="max-width: 300px" class="wp-caption alignright"><img class="size-medium wp-image-76" src="/wp-content/uploads/quarto-main-300x208.png" alt="" width="300" height="208" srcset="/wp-content/uploads/quarto-main-300x208.png 300w, /wp-content/uploads/quarto-main-768x533.png 768w, /wp-content/uploads/quarto-main-1024x711.png 1024w, /wp-content/uploads/quarto-main-1100x764.png 1100w, /wp-content/uploads/quarto-main.png 1352w" sizes="(max-width: 300px) 100vw, 300px" /><figcaption class="wp-caption-text">The main screen of the web app display is very similar to the main screen of the iPad app, but editable</figcaption></figure>
@@ -232,32 +102,18 @@ img.emoji {
 <p><span class="titleText">Github:</span> <span class="summaryText">Closed source, but if you&#8217;re really curious let me know.</span></p>
 <p><span class="titleText">Live:</span> <span class="summaryText">Sign up for free at <a href="https://www.quarto.io/">https://www.quarto.io/</a></span></p>
 </div>
-	</div><!-- .entry-content -->
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Orchestra3D</title>
+		<link>/orchestra3d/</link>
+		<pubDate>Tue, 09 Jan 2018 06:28:48 +0000</pubDate>
+		<dc:creator><![CDATA[pseaton]]></dc:creator>
+				<category><![CDATA[Uncategorized]]></category>
 
-	<footer class="entry-footer">
-		
-				<div class="entry-meta">
-			<span class="byline">
-				<a href="/author/pseaton/" title="Posts by pseaton" rel="author">pseaton</a>			</span>
-							<span class="cat-links">
-					<a href="/category/uncategorized/" rel="category tag">Uncategorized</a>				</span><!-- .cat-links -->
-			
-			
-			<span class="published-on">
-									<a href="/quarto/" rel="bookmark"><time class="entry-date published" datetime="2018-01-09T06:56:40+00:00">January 9, 2018</time><time class="updated" datetime="2018-01-11T07:20:00+00:00">January 11, 2018</time></a>
-							</span>
-
-					</div><!-- .entry-meta -->
-		</footer><!-- .entry-footer -->
-</article><!-- #post-## -->
-
-			
-				
-<article id="post-66" class="post-66 post type-post status-publish format-standard hentry category-uncategorized">
-			<header class="entry-header">
-			<h1 class="entry-title"><a href="/orchestra3d/" rel="bookmark">Orchestra3D</a></h1>		</header><!-- .entry-header -->	
-	<div class="entry-content">
-		<p>In addition to providing the base code for Orchestra Data Science above, Orchestra3D is a solid project in its own right, bringing not only visual flow programming to the web browser, but a custom compiled native JavaScript CAD kernel as well. Orchestra3D integrates these parts into a fully functional stand alone web application, allowing users experiment with parametric design directly in the browser.</p>
+		<guid isPermaLink="false">/?p=66</guid>
+		<description><![CDATA[In addition to providing the base code for Orchestra Data Science above, Orchestra3D is a solid project in its own right, bringing not only visual flow programming to the web browser, but a custom compiled native JavaScript CAD kernel as well. Orchestra3D integrates these parts into a fully functional stand alone web application, allowing users &#8230; <a href="/orchestra3d/" class="more-link">Continue reading <span class="screen-reader-text">Orchestra3D</span> <span class="meta-nav">&#8594;</span></a>]]></description>
+				<content:encoded><![CDATA[<p>In addition to providing the base code for Orchestra Data Science above, Orchestra3D is a solid project in its own right, bringing not only visual flow programming to the web browser, but a custom compiled native JavaScript CAD kernel as well. Orchestra3D integrates these parts into a fully functional stand alone web application, allowing users experiment with parametric design directly in the browser.</p>
 <p><img class="alignnone size-full wp-image-68" src="/wp-content/uploads/orchestra3d.png" alt="" width="1352" height="939" srcset="/wp-content/uploads/orchestra3d.png 1352w, /wp-content/uploads/orchestra3d-300x208.png 300w, /wp-content/uploads/orchestra3d-768x533.png 768w, /wp-content/uploads/orchestra3d-1024x711.png 1024w, /wp-content/uploads/orchestra3d-1100x764.png 1100w" sizes="(max-width: 1352px) 100vw, 1352px" /></p>
 <p><a href="http://www.sintef.no/globalassets/upload/ikt/9011/geometri/sisl/manual.pdf">SISL</a> is a Fortran / C / C++ CAD kernel developed by the department of applied mathematics at SINTEF in Norway. I selected it (vs others such as OpenSCAD, Salome, Open CASCADE, etc) because of its specific strengths for NURBS geometry and absence of cruft. Once cross compiled to JavaScript via LLVM byte code in <a href="https://en.wikipedia.org/wiki/Emscripten">Emscripten</a>, I&#8217;m able to get fast, robust geometry functions in just a couple of MBs.</p>
 <p>Finally, Orchestra3D employs an especially rigorous approach to the hardest problem in flow-based programming: management of lists of data. Orchestra takes its cues from <a href="http://www.grasshopper3d.com/">Grasshopper</a>, a tool used for flow based programming in CAD (Rhinoceros 3D, specifically) where list management is fully and thoughtfully resolved. Orchestra3D mimics grasshopper behavior carefully. I built close to 100 unit tests based on expectations manually lifted from grasshopper, then worked to ensure they all passed in Orchestra.</p>
@@ -271,32 +127,18 @@ img.emoji {
 <p><span class="titleText">Live Demo:</span> <span class="summaryText">Some examples are available for playing around <a href="https://www.orchestra3d.io/app/#">without logging in.</a> A video of <a href="https://www.orchestra3d.io/">Orchestra3D in use</a> is on the homepage. Because this project remains unfinished, I&#8217;m not currently allowing new account creation at this time. Create new components by typing in the &#8220;new component&#8221; field,<br />
 and seeing what comes up. Absent tutorials, Orchestra3D is hard to use. Try Orchestra Data Science if you really want to learn it!</span></p>
 </div>
-	</div><!-- .entry-content -->
+]]></content:encoded>
+			</item>
+		<item>
+		<title>e-nable</title>
+		<link>/e-nable/</link>
+		<pubDate>Mon, 08 Jan 2018 09:05:57 +0000</pubDate>
+		<dc:creator><![CDATA[pseaton]]></dc:creator>
+				<category><![CDATA[Uncategorized]]></category>
 
-	<footer class="entry-footer">
-		
-				<div class="entry-meta">
-			<span class="byline">
-				<a href="/author/pseaton/" title="Posts by pseaton" rel="author">pseaton</a>			</span>
-							<span class="cat-links">
-					<a href="/category/uncategorized/" rel="category tag">Uncategorized</a>				</span><!-- .cat-links -->
-			
-			
-			<span class="published-on">
-									<a href="/orchestra3d/" rel="bookmark"><time class="entry-date published" datetime="2018-01-09T06:28:48+00:00">January 9, 2018</time><time class="updated" datetime="2018-01-11T06:38:41+00:00">January 11, 2018</time></a>
-							</span>
-
-					</div><!-- .entry-meta -->
-		</footer><!-- .entry-footer -->
-</article><!-- #post-## -->
-
-			
-				
-<article id="post-91" class="post-91 post type-post status-publish format-standard hentry category-uncategorized">
-			<header class="entry-header">
-			<h1 class="entry-title"><a href="/e-nable/" rel="bookmark">e-nable</a></h1>		</header><!-- .entry-header -->	
-	<div class="entry-content">
-		<p>Through associations while working at Pier 9 / Instructables, I became involved with a non-profit called the E-nable Community Foundation which provides low-cost 3D-Printed Prosthetics to those with limb differences. I was involved with the non-profit only for about a year until my son was born. During that time I provided the base proof-of-concept for their now-product, Limbforge, which enables browser-based configuration of the Printable Prosthetics.</p>
+		<guid isPermaLink="false">/?p=91</guid>
+		<description><![CDATA[Through associations while working at Pier 9 / Instructables, I became involved with a non-profit called the E-nable Community Foundation which provides low-cost 3D-Printed Prosthetics to those with limb differences. I was involved with the non-profit only for about a year until my son was born. During that time I provided the base proof-of-concept for &#8230; <a href="/e-nable/" class="more-link">Continue reading <span class="screen-reader-text">e-nable</span> <span class="meta-nav">&#8594;</span></a>]]></description>
+				<content:encoded><![CDATA[<p>Through associations while working at Pier 9 / Instructables, I became involved with a non-profit called the E-nable Community Foundation which provides low-cost 3D-Printed Prosthetics to those with limb differences. I was involved with the non-profit only for about a year until my son was born. During that time I provided the base proof-of-concept for their now-product, Limbforge, which enables browser-based configuration of the Printable Prosthetics.</p>
 <p><img class="alignnone size-large wp-image-107" src="/wp-content/uploads/Limbforge-1024x711.png" alt="" width="1024" height="711" srcset="/wp-content/uploads/Limbforge-1024x711.png 1024w, /wp-content/uploads/Limbforge-300x208.png 300w, /wp-content/uploads/Limbforge-768x533.png 768w, /wp-content/uploads/Limbforge-1100x764.png 1100w, /wp-content/uploads/Limbforge.png 1352w" sizes="(max-width: 1024px) 100vw, 1024px" /></p>
 <p>Though I really only did a few night&#8217;s work for Limbforge, the technical architecture is what they still use today. Prior work had attempted to parameterize every model in code using OpenSCAD on the backend, but it created serious problems for the project:</p>
 <ol>
@@ -312,32 +154,18 @@ and seeing what comes up. Absent tutorials, Orchestra3D is hard to use. Try Orch
 <p><span class="titleText">Github:</span> <span class="summaryText"><a href="https://github.com/strandedcity/e-nableRnD/tree/master/Limbforge">https://github.com/strandedcity/e-nableRnD/tree/master/Limbforge</a></span></p>
 <p><span class="titleText">Demo:</span> <span class="summaryText"><a href="https://strandedcity.github.io/e-nableRnD/Limbforge/">Proof of Concept</a> (this is buggy and incomplete, but working if you click-drag to rotate the model after selection)</span></p>
 </div>
-	</div><!-- .entry-content -->
+]]></content:encoded>
+			</item>
+		<item>
+		<title>3D Printed Block Print Generator</title>
+		<link>/3d-printed-block-print-generator/</link>
+		<pubDate>Mon, 08 Jan 2018 08:36:34 +0000</pubDate>
+		<dc:creator><![CDATA[pseaton]]></dc:creator>
+				<category><![CDATA[Uncategorized]]></category>
 
-	<footer class="entry-footer">
-		
-				<div class="entry-meta">
-			<span class="byline">
-				<a href="/author/pseaton/" title="Posts by pseaton" rel="author">pseaton</a>			</span>
-							<span class="cat-links">
-					<a href="/category/uncategorized/" rel="category tag">Uncategorized</a>				</span><!-- .cat-links -->
-			
-			
-			<span class="published-on">
-									<a href="/e-nable/" rel="bookmark"><time class="entry-date published" datetime="2018-01-08T09:05:57+00:00">January 8, 2018</time><time class="updated" datetime="2018-01-11T09:14:51+00:00">January 11, 2018</time></a>
-							</span>
-
-					</div><!-- .entry-meta -->
-		</footer><!-- .entry-footer -->
-</article><!-- #post-## -->
-
-			
-				
-<article id="post-101" class="post-101 post type-post status-publish format-standard hentry category-uncategorized">
-			<header class="entry-header">
-			<h1 class="entry-title"><a href="/3d-printed-block-print-generator/" rel="bookmark">3D Printed Block Print Generator</a></h1>		</header><!-- .entry-header -->	
-	<div class="entry-content">
-		<p><a href="http://strandedcity.github.io/BlockPrintGenerator/">This &#8220;ditty&#8221;</a> is a fun one: a client-side web app that takes a photo you give it and does the following:</p>
+		<guid isPermaLink="false">/?p=101</guid>
+		<description><![CDATA[This &#8220;ditty&#8221; is a fun one: a client-side web app that takes a photo you give it and does the following: Downsample it Greyscale it Determine how much black (as a percentage) is in a given downsampled pixel Use that to generate 3D truncated cones where the top surface of each fills that percent of &#8230; <a href="/3d-printed-block-print-generator/" class="more-link">Continue reading <span class="screen-reader-text">3D Printed Block Print Generator</span> <span class="meta-nav">&#8594;</span></a>]]></description>
+				<content:encoded><![CDATA[<p><a href="http://strandedcity.github.io/BlockPrintGenerator/">This &#8220;ditty&#8221;</a> is a fun one: a client-side web app that takes a photo you give it and does the following:</p>
 <ol>
 <li>Downsample it</li>
 <li>Greyscale it</li>
@@ -355,32 +183,18 @@ and seeing what comes up. Absent tutorials, Orchestra3D is hard to use. Try Orch
 <p><span class="titleText">Github:</span> <span class="summaryText">Closed source, but if you&#8217;re really curious let me know.</span></p>
 <p><span class="titleText">Live Demo:</span> <span class="summaryText"><a href="http://strandedcity.github.io/BlockPrintGenerator/">http://strandedcity.github.io/BlockPrintGenerator/</a></span></p>
 </div>
-	</div><!-- .entry-content -->
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Instructables Galaxy</title>
+		<link>/instructables-galaxy/</link>
+		<pubDate>Sun, 07 Jan 2018 07:27:12 +0000</pubDate>
+		<dc:creator><![CDATA[pseaton]]></dc:creator>
+				<category><![CDATA[Uncategorized]]></category>
 
-	<footer class="entry-footer">
-		
-				<div class="entry-meta">
-			<span class="byline">
-				<a href="/author/pseaton/" title="Posts by pseaton" rel="author">pseaton</a>			</span>
-							<span class="cat-links">
-					<a href="/category/uncategorized/" rel="category tag">Uncategorized</a>				</span><!-- .cat-links -->
-			
-			
-			<span class="published-on">
-									<a href="/3d-printed-block-print-generator/" rel="bookmark"><time class="entry-date published" datetime="2018-01-08T08:36:34+00:00">January 8, 2018</time><time class="updated" datetime="2018-01-11T08:55:20+00:00">January 11, 2018</time></a>
-							</span>
-
-					</div><!-- .entry-meta -->
-		</footer><!-- .entry-footer -->
-</article><!-- #post-## -->
-
-			
-				
-<article id="post-86" class="post-86 post type-post status-publish format-standard hentry category-uncategorized">
-			<header class="entry-header">
-			<h1 class="entry-title"><a href="/instructables-galaxy/" rel="bookmark">Instructables Galaxy</a></h1>		</header><!-- .entry-header -->	
-	<div class="entry-content">
-		<p>After acquisition, Instructables moved to <a href="https://www.autodesk.com/pier-9">Autodesk&#8217;s Pier 9</a> where thousands of monthly visitors need an introduction to what Instructables is. I was commissioned (outside of work) to build a large (52&#8243;) touch-screen display. I used the web browser as the display platform both for its familiarity, and its portability. A <a href="https://galaxy.phil-seaton.com/">web-based version</a> was easy to make public.</p>
+		<guid isPermaLink="false">/?p=86</guid>
+		<description><![CDATA[After acquisition, Instructables moved to Autodesk&#8217;s Pier 9 where thousands of monthly visitors need an introduction to what Instructables is. I was commissioned (outside of work) to build a large (52&#8243;) touch-screen display. I used the web browser as the display platform both for its familiarity, and its portability. A web-based version was easy to &#8230; <a href="/instructables-galaxy/" class="more-link">Continue reading <span class="screen-reader-text">Instructables Galaxy</span> <span class="meta-nav">&#8594;</span></a>]]></description>
+				<content:encoded><![CDATA[<p>After acquisition, Instructables moved to <a href="https://www.autodesk.com/pier-9">Autodesk&#8217;s Pier 9</a> where thousands of monthly visitors need an introduction to what Instructables is. I was commissioned (outside of work) to build a large (52&#8243;) touch-screen display. I used the web browser as the display platform both for its familiarity, and its portability. A <a href="https://galaxy.phil-seaton.com/">web-based version</a> was easy to make public.</p>
 <p><img class="alignnone size-full wp-image-88" src="/wp-content/uploads/galaxy-text.jpg" alt="" width="1352" height="939" srcset="/wp-content/uploads/galaxy-text.jpg 1352w, /wp-content/uploads/galaxy-text-300x208.jpg 300w, /wp-content/uploads/galaxy-text-768x533.jpg 768w, /wp-content/uploads/galaxy-text-1024x711.jpg 1024w, /wp-content/uploads/galaxy-text-1100x764.jpg 1100w" sizes="(max-width: 1352px) 100vw, 1352px" /></p>
 <p>An extensive writeup of how the Galaxy was developed is <a href="http://www.instructables.com/id/Instructables-Universe-in-Threejs/">documented in the Instructable</a>. This was an early journey into WebGL for me (my first, I believe), so it included a lot of learning along the way.</p>
 <p>The big challenges, once I chose WebGL as the path forward, related to figuring out how to make the Galaxy look natural and move fluidly without animating each star separately. I ended up creating several &#8220;clusters&#8221; of stars that move together, but along slightly different axes and in different directions.</p>
@@ -392,45 +206,7 @@ and seeing what comes up. Absent tutorials, Orchestra3D is hard to use. Try Orch
 <p><span class="titleText">Github:</span> <span class="summaryText"><a href="https://github.com/strandedcity/InstructablesGalaxy">Repo</a> includes the entire application, excluding bits that touch private Instructables APIs</span></p>
 <p><span class="titleText">Live Demo:</span> <span class="summaryText"><a href="https://galaxy.phil-seaton.com/">https://galaxy.phil-seaton.com/</a> Search for an author to see their projects (try &#8220;randofo&#8221; or &#8220;pseaton&#8221;) in a constellation. From a project click its category to see the cluster of related projects light up bright!</span></p>
 </div>
-	</div><!-- .entry-content -->
-
-	<footer class="entry-footer">
-		
-				<div class="entry-meta">
-			<span class="byline">
-				<a href="/author/pseaton/" title="Posts by pseaton" rel="author">pseaton</a>			</span>
-							<span class="cat-links">
-					<a href="/category/uncategorized/" rel="category tag">Uncategorized</a>				</span><!-- .cat-links -->
-			
-			
-			<span class="published-on">
-									<a href="/instructables-galaxy/" rel="bookmark"><time class="entry-date published" datetime="2018-01-07T07:27:12+00:00">January 7, 2018</time><time class="updated" datetime="2018-01-11T08:08:48+00:00">January 11, 2018</time></a>
-							</span>
-
-					</div><!-- .entry-meta -->
-		</footer><!-- .entry-footer -->
-</article><!-- #post-## -->
-
-			
-			
-		
-		</main><!-- #main -->
-	</div><!-- #primary -->
-
-		</div><!-- #content -->
-
-		<footer id="colophon" class="site-footer" role="contentinfo">
-						<div class="site-info">
-				(c) 2018 Phil Seaton
-			</div><!-- .site-info -->
-		</footer><!-- #colophon -->
-	</div><!-- #content-wrapper -->
-</div><!-- #page -->
-
-<script type='text/javascript' src='/wp-content/themes/independent-publisher-2-wpcom/js/navigation.js?ver=20170317'></script>
-<script type='text/javascript' src='/wp-content/themes/independent-publisher-2-wpcom/js/independent-publisher-2.js?ver=20170406'></script>
-<script type='text/javascript' src='/wp-content/themes/independent-publisher-2-wpcom/js/skip-link-focus-fix.js?ver=20170315'></script>
-<script type='text/javascript' src='/wp-includes/js/wp-embed.min.js?ver=4.9.1'></script>
-
-</body>
-</html>
+]]></content:encoded>
+			</item>
+	</channel>
+</rss>
