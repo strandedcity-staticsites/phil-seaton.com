@@ -10,9 +10,9 @@
 <channel>
 	<title>Uncategorized &#8211; Phil Seaton</title>
 	<atom:link href="/category/uncategorized/feed/" rel="self" type="application/rss+xml" />
-	<link></link>
+	<link>/</link>
 	<description></description>
-	<lastBuildDate>Thu, 11 Jan 2018 09:14:51 +0000</lastBuildDate>
+	<lastBuildDate>Tue, 16 Jan 2018 05:00:50 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>hourly</sy:updatePeriod>
 	<sy:updateFrequency>1</sy:updateFrequency>
@@ -24,7 +24,7 @@
 		<dc:creator><![CDATA[pseaton]]></dc:creator>
 				<category><![CDATA[Uncategorized]]></category>
 
-		<guid isPermaLink="false">/?p=1</guid>
+		<guid isPermaLink="false">:8080/?p=1</guid>
 		<description><![CDATA[I&#8217;m an MIT-trained engineering leader in the SF Bay Area. By day, I build, manage, and scale high-velocity software development teams. By night, I keep my technical skills honed by programming a range of side projects. Some of my projects and experiments follow. You&#8217;ll see some themes: Visual Flow Programming, 3D Geometry / CAD, Web &#8230; <a href="/about-phil/" class="more-link">Continue reading <span class="screen-reader-text">Phil Seaton</span> <span class="meta-nav">&#8594;</span></a>]]></description>
 				<content:encoded><![CDATA[<p>I&#8217;m an MIT-trained engineering leader in the SF Bay Area. By day, I build, manage, and scale high-velocity software development teams. By night, I keep my technical skills honed by programming a range of side projects. Some of my projects and experiments follow.</p>
 <p>You&#8217;ll see some themes: Visual Flow Programming, 3D Geometry / CAD, Web Browsers doing things servers normally do, and connections to my computational design master&#8217;s work. Most are demo-able in some way. If something catches your eye, please reach out.</p>
@@ -38,7 +38,7 @@
 		<dc:creator><![CDATA[pseaton]]></dc:creator>
 				<category><![CDATA[Uncategorized]]></category>
 
-		<guid isPermaLink="false">/?p=27</guid>
+		<guid isPermaLink="false">:8080/?p=27</guid>
 		<description><![CDATA[Orchestra Data Science is a visual flow programming interface in pure JavaScript that runs in Python Jupyter Notebooks. Orchestra enables a non-technical (or at least less technical) audience to work with big data, and eventually machine learning algorithms, without knowing Python syntax or paradigms. Complex programming and data-ingestion tasks such as deploying an API micro-service to &#8230; <a href="/orchestra-visual-flow-programming-for-python/" class="more-link">Continue reading <span class="screen-reader-text">Orchestra Data Science</span> <span class="meta-nav">&#8594;</span></a>]]></description>
 				<content:encoded><![CDATA[<p>Orchestra Data Science is a visual flow programming interface in pure JavaScript that runs in <a href="http://jupyter.org/">Python Jupyter Notebooks</a>. Orchestra enables a non-technical (or at least <em>less</em> technical) audience to work with big data, and eventually machine learning algorithms, without knowing Python syntax or paradigms. Complex programming and data-ingestion tasks such as deploying an API micro-service to munge live streaming data become possible without writing a single line of code. For expert users, it&#8217;s easy to &#8220;eject&#8221; and employ custom Python simultaneously.</p>
 <p><img class="alignnone size-full wp-image-70" src="/wp-content/uploads/orchestra-data-science.png" alt="" width="1352" height="939" srcset="/wp-content/uploads/orchestra-data-science.png 1352w, /wp-content/uploads/orchestra-data-science-300x208.png 300w, /wp-content/uploads/orchestra-data-science-768x533.png 768w, /wp-content/uploads/orchestra-data-science-1024x711.png 1024w, /wp-content/uploads/orchestra-data-science-1100x764.png 1100w" sizes="(max-width: 1352px) 100vw, 1352px" /></p>
@@ -63,7 +63,7 @@
 		<dc:creator><![CDATA[pseaton]]></dc:creator>
 				<category><![CDATA[Uncategorized]]></category>
 
-		<guid isPermaLink="false">/?p=93</guid>
+		<guid isPermaLink="false">:8080/?p=93</guid>
 		<description><![CDATA[The rare open-sourced work project! I was its sole contributor, one of my last projects before leaving. The STL Thumbnailer is designed to create fast previews of user-supplied STL files. The previews are simple wireframes, without lighting or textures (limitations imposed by the dependency Node-Canvas), but they come back fast. Very fast. Autodesk&#8217;s &#8220;Forge API&#8221; has &#8230; <a href="/stl-thumbnailer/" class="more-link">Continue reading <span class="screen-reader-text">STL Thumbnailer</span> <span class="meta-nav">&#8594;</span></a>]]></description>
 				<content:encoded><![CDATA[<p>The rare open-sourced work project! I was its sole contributor, one of my last projects before leaving. The STL Thumbnailer is designed to create fast previews of user-supplied STL files. The previews are simple wireframes, without lighting or textures (limitations imposed by the dependency Node-Canvas), but they come back fast. <em>Very</em> fast. Autodesk&#8217;s &#8220;Forge API&#8221; has a service that provides thumbnails. They <em>do </em>have lighting and textures but they look terrible and take a very long time (usually 5-6 minutes). By contrast, this open-source NPM package returns nice-looking wireframes in high resolution in fractions of a second.</p>
 <p><img class="aligncenter size-full wp-image-95" src="/wp-content/uploads/stl-output.png" alt="" width="500" height="500" srcset="/wp-content/uploads/stl-output.png 500w, /wp-content/uploads/stl-output-150x150.png 150w, /wp-content/uploads/stl-output-300x300.png 300w" sizes="(max-width: 500px) 100vw, 500px" /></p>
@@ -84,7 +84,7 @@
 		<dc:creator><![CDATA[pseaton]]></dc:creator>
 				<category><![CDATA[Uncategorized]]></category>
 
-		<guid isPermaLink="false">/?p=74</guid>
+		<guid isPermaLink="false">:8080/?p=74</guid>
 		<description><![CDATA[Quarto was born of a surprising problem: my wife and I, both architects by training, were unable to find a simple iPad app that served our needs for an architecture portfolio. We wanted an app with absolutely no cruft that could safely be handed over to an interviewer without worrying that they would push the &#8230; <a href="/quarto/" class="more-link">Continue reading <span class="screen-reader-text">Quarto</span> <span class="meta-nav">&#8594;</span></a>]]></description>
 				<content:encoded><![CDATA[<p><a href="https://www.quarto.io/"><img class="alignnone size-full wp-image-75" src="/wp-content/uploads/quarto-homepage.png" alt="" width="1352" height="939" srcset="/wp-content/uploads/quarto-homepage.png 1352w, /wp-content/uploads/quarto-homepage-300x208.png 300w, /wp-content/uploads/quarto-homepage-768x533.png 768w, /wp-content/uploads/quarto-homepage-1024x711.png 1024w, /wp-content/uploads/quarto-homepage-1100x764.png 1100w" sizes="(max-width: 1352px) 100vw, 1352px" /></a></p>
 <figure id="attachment_78" style="max-width: 300px" class="wp-caption alignleft"><img src="/wp-content/uploads/quarto-ipad-300x225.jpg" alt="" width="300" height="225" class="size-medium wp-image-78" srcset="/wp-content/uploads/quarto-ipad-300x225.jpg 300w, /wp-content/uploads/quarto-ipad.jpg 552w" sizes="(max-width: 300px) 100vw, 300px" /><figcaption class="wp-caption-text">Quarto as seen on the iPad. Share menu showing.</figcaption></figure>
@@ -111,7 +111,7 @@
 		<dc:creator><![CDATA[pseaton]]></dc:creator>
 				<category><![CDATA[Uncategorized]]></category>
 
-		<guid isPermaLink="false">/?p=66</guid>
+		<guid isPermaLink="false">:8080/?p=66</guid>
 		<description><![CDATA[In addition to providing the base code for Orchestra Data Science above, Orchestra3D is a solid project in its own right, bringing not only visual flow programming to the web browser, but a custom compiled native JavaScript CAD kernel as well. Orchestra3D integrates these parts into a fully functional stand alone web application, allowing users &#8230; <a href="/orchestra3d/" class="more-link">Continue reading <span class="screen-reader-text">Orchestra3D</span> <span class="meta-nav">&#8594;</span></a>]]></description>
 				<content:encoded><![CDATA[<p>In addition to providing the base code for Orchestra Data Science above, Orchestra3D is a solid project in its own right, bringing not only visual flow programming to the web browser, but a custom compiled native JavaScript CAD kernel as well. Orchestra3D integrates these parts into a fully functional stand alone web application, allowing users experiment with parametric design directly in the browser.</p>
 <p><img class="alignnone size-full wp-image-68" src="/wp-content/uploads/orchestra3d.png" alt="" width="1352" height="939" srcset="/wp-content/uploads/orchestra3d.png 1352w, /wp-content/uploads/orchestra3d-300x208.png 300w, /wp-content/uploads/orchestra3d-768x533.png 768w, /wp-content/uploads/orchestra3d-1024x711.png 1024w, /wp-content/uploads/orchestra3d-1100x764.png 1100w" sizes="(max-width: 1352px) 100vw, 1352px" /></p>
@@ -136,7 +136,7 @@ and seeing what comes up. Absent tutorials, Orchestra3D is hard to use. Try Orch
 		<dc:creator><![CDATA[pseaton]]></dc:creator>
 				<category><![CDATA[Uncategorized]]></category>
 
-		<guid isPermaLink="false">/?p=91</guid>
+		<guid isPermaLink="false">:8080/?p=91</guid>
 		<description><![CDATA[Through associations while working at Pier 9 / Instructables, I became involved with a non-profit called the E-nable Community Foundation which provides low-cost 3D-Printed Prosthetics to those with limb differences. I was involved with the non-profit only for about a year until my son was born. During that time I provided the base proof-of-concept for &#8230; <a href="/e-nable/" class="more-link">Continue reading <span class="screen-reader-text">e-nable</span> <span class="meta-nav">&#8594;</span></a>]]></description>
 				<content:encoded><![CDATA[<p>Through associations while working at Pier 9 / Instructables, I became involved with a non-profit called the E-nable Community Foundation which provides low-cost 3D-Printed Prosthetics to those with limb differences. I was involved with the non-profit only for about a year until my son was born. During that time I provided the base proof-of-concept for their now-product, Limbforge, which enables browser-based configuration of the Printable Prosthetics.</p>
 <p><img class="alignnone size-large wp-image-107" src="/wp-content/uploads/Limbforge-1024x711.png" alt="" width="1024" height="711" srcset="/wp-content/uploads/Limbforge-1024x711.png 1024w, /wp-content/uploads/Limbforge-300x208.png 300w, /wp-content/uploads/Limbforge-768x533.png 768w, /wp-content/uploads/Limbforge-1100x764.png 1100w, /wp-content/uploads/Limbforge.png 1352w" sizes="(max-width: 1024px) 100vw, 1024px" /></p>
@@ -163,7 +163,7 @@ and seeing what comes up. Absent tutorials, Orchestra3D is hard to use. Try Orch
 		<dc:creator><![CDATA[pseaton]]></dc:creator>
 				<category><![CDATA[Uncategorized]]></category>
 
-		<guid isPermaLink="false">/?p=101</guid>
+		<guid isPermaLink="false">:8080/?p=101</guid>
 		<description><![CDATA[This &#8220;ditty&#8221; is a fun one: a client-side web app that takes a photo you give it and does the following: Downsample it Greyscale it Determine how much black (as a percentage) is in a given downsampled pixel Use that to generate 3D truncated cones where the top surface of each fills that percent of &#8230; <a href="/3d-printed-block-print-generator/" class="more-link">Continue reading <span class="screen-reader-text">3D Printed Block Print Generator</span> <span class="meta-nav">&#8594;</span></a>]]></description>
 				<content:encoded><![CDATA[<p><a href="http://strandedcity.github.io/BlockPrintGenerator/">This &#8220;ditty&#8221;</a> is a fun one: a client-side web app that takes a photo you give it and does the following:</p>
 <ol>
@@ -192,7 +192,7 @@ and seeing what comes up. Absent tutorials, Orchestra3D is hard to use. Try Orch
 		<dc:creator><![CDATA[pseaton]]></dc:creator>
 				<category><![CDATA[Uncategorized]]></category>
 
-		<guid isPermaLink="false">/?p=86</guid>
+		<guid isPermaLink="false">:8080/?p=86</guid>
 		<description><![CDATA[After acquisition, Instructables moved to Autodesk&#8217;s Pier 9 where thousands of monthly visitors need an introduction to what Instructables is. I was commissioned (outside of work) to build a large (52&#8243;) touch-screen display. I used the web browser as the display platform both for its familiarity, and its portability. A web-based version was easy to &#8230; <a href="/instructables-galaxy/" class="more-link">Continue reading <span class="screen-reader-text">Instructables Galaxy</span> <span class="meta-nav">&#8594;</span></a>]]></description>
 				<content:encoded><![CDATA[<p>After acquisition, Instructables moved to <a href="https://www.autodesk.com/pier-9">Autodesk&#8217;s Pier 9</a> where thousands of monthly visitors need an introduction to what Instructables is. I was commissioned (outside of work) to build a large (52&#8243;) touch-screen display. I used the web browser as the display platform both for its familiarity, and its portability. A <a href="https://galaxy.phil-seaton.com/">web-based version</a> was easy to make public.</p>
 <p><img class="alignnone size-full wp-image-88" src="/wp-content/uploads/galaxy-text.jpg" alt="" width="1352" height="939" srcset="/wp-content/uploads/galaxy-text.jpg 1352w, /wp-content/uploads/galaxy-text-300x208.jpg 300w, /wp-content/uploads/galaxy-text-768x533.jpg 768w, /wp-content/uploads/galaxy-text-1024x711.jpg 1024w, /wp-content/uploads/galaxy-text-1100x764.jpg 1100w" sizes="(max-width: 1352px) 100vw, 1352px" /></p>
